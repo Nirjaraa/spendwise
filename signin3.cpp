@@ -14,7 +14,7 @@ signin3::~signin3()
 }
 
 void signin3::on_pushButton_clicked()
-{
+{   hide();
     b=new linkin;
     b ->show();
 }

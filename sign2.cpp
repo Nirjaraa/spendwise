@@ -14,7 +14,7 @@ sign2::~sign2()
 }
 
 void sign2::on_pushButton_clicked()
-{
+{   hide();
     a=new signin3(this);
     a-> show();
 }

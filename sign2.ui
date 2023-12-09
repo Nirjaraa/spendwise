@@ -31,7 +31,8 @@ border-color:none;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/spendeise.png);</string>
+     <string notr="true">border-image: url(:/new/background-images/resources/spendeise.png);
+border-image: url(:/resources/spendeise.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -47,7 +48,8 @@ border-color:none;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/logo.png);</string>
+     <string notr="true">border-image: url(:/new/background-images/resources/logo.png);
+border-image: url(:/resources/logo.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -63,10 +65,11 @@ border-color:none;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/sign in 1.png);</string>
+     <string notr="true">border-image: url(:/new/background-images/resources/sign in 1.png);
+border-image: url(:/resources/sign in 1.png);</string>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -79,7 +82,11 @@ border-color:none;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(76,15,96);
+     <string notr="true">font-family: 'Poppins'; font-size: 30px;
+font: 32pt &quot;Bahnschrift&quot;;
+
+
+color: rgb(76,15,96);
 font-size:32px;
 text-decoration: underline;</string>
     </property>
@@ -97,9 +104,13 @@ text-decoration: underline;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size:20px;
-color:rgb(0,0,0);
-text-decoration: underline;</string>
+     <string notr="true">fborder-image: none;
+font: 16pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ 
+text-decoration: underline;
+</string>
     </property>
     <property name="text">
      <string>Enter your birthdate</string>
@@ -108,8 +119,8 @@ text-decoration: underline;</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>413</y>
+      <x>620</x>
+      <y>300</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -120,6 +131,26 @@ border-radius:10px;</string>
     </property>
     <property name="text">
      <string>Continue</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>240</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+
+</string>
     </property>
    </widget>
   </widget>

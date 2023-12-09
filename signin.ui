@@ -32,7 +32,8 @@ border-image:none;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/spendeise.png);</string>
+     <string notr="true"> 
+border-image: url(:/resources/spendeise.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -41,15 +42,28 @@ border-image:none;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>110</y>
-      <width>291</width>
+      <x>560</x>
+      <y>90</y>
+      <width>301</width>
       <height>51</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(76,15,96);
-font-size:32px;
+     <string notr="true">font-family: 'Poppins'; font-size: 25px;
+font: 25pt &quot;Bahnschrift&quot;;
+
+
+color: rgb(76,15,96);
+font-size:25px;
 text-decoration: underline;</string>
     </property>
     <property name="text">
@@ -59,14 +73,14 @@ text-decoration: underline;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>30</x>
       <y>120</y>
       <width>321</width>
       <height>311</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"> border-image: url(:/new/background-images/resources/sign in 1.png);</string>
+     <string notr="true"> border-image: url(:/resources/sign in 1.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -75,20 +89,23 @@ text-decoration: underline;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>180</y>
-      <width>331</width>
+      <x>520</x>
+      <y>140</y>
+      <width>341</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size: 20px;
-color:rgb(0, 0, 0);
+     <string notr="true">fborder-image: none;
+font: 16pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ 
 text-decoration: underline;
 </string>
     </property>
     <property name="text">
-     <string>Select a username for your account</string>
+     <string>Please fill up the information below</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -101,7 +118,7 @@ text-decoration: underline;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/logo.png);</string>
+     <string notr="true"> border-image: url(:/resources/logo.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -110,8 +127,8 @@ text-decoration: underline;
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>413</y>
+      <x>570</x>
+      <y>460</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -122,6 +139,255 @@ border-radius: 10px;</string>
     </property>
     <property name="text">
      <string>Continue</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>220</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 15pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ </string>
+    </property>
+    <property name="text">
+     <string>First name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>290</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 15pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ </string>
+    </property>
+    <property name="text">
+     <string>Last name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fname_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>250</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+padding:5px;
+
+</string>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your first name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lname_lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>320</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="uname_lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>400</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>360</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 15pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ </string>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email_lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>250</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>210</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">fborder-image: none;
+font: 16pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ 
+text-decoration: underline;
+</string>
+    </property>
+    <property name="text">
+     <string>Enter your email address</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="repwlineEdit_5">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>400</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>370</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 15pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ </string>
+    </property>
+    <property name="text">
+     <string>Re-enter your password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>320</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+background-color: rgb(242,231,245);
+border-radius: 10px;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>290</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+font: 15pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(0,0,0);
+ </string>
+    </property>
+    <property name="text">
+     <string>Enter your password</string>
     </property>
    </widget>
   </widget>

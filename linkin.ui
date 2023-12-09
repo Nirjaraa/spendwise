@@ -21,16 +21,16 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>871</width>
-      <height>491</height>
+      <y>10</y>
+      <width>941</width>
+      <height>521</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/border.png);</string>
+     <string notr="true"> border-image: url(:/resources/border.png);</string>
     </property>
     <property name="text">
-     <string> </string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -38,31 +38,33 @@
      <rect>
       <x>310</x>
       <y>100</y>
-      <width>281</width>
+      <width>301</width>
       <height>261</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/link.png);</string>
+     <string notr="true">border-image: url(:/new/background-images/resources/link.png);
+border-image: url(:/resources/link.png);</string>
     </property>
     <property name="text">
-     <string> </string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>778</x>
-      <y>425</y>
-      <width>81</width>
-      <height>71</height>
+      <x>830</x>
+      <y>430</y>
+      <width>91</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/logo.png);</string>
+     <string notr="true">background-image:none; 
+border-image: url(:/resources/logo.png);</string>
     </property>
     <property name="text">
-     <string> </string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -70,7 +72,7 @@
      <rect>
       <x>360</x>
       <y>393</y>
-      <width>181</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -86,7 +88,6 @@ font-weight: bold;
     </property>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

@@ -14,7 +14,7 @@ linkin::~linkin()
 }
 
 void linkin::on_pushButton_clicked()
-{
+{   hide();
     c=new dashboard();
     c ->show();
 }

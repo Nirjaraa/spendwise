@@ -1,0 +1,58 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>2.png</file>
+        <file>about.png</file>
+        <file>aboutus2.png</file>
+        <file>aboutuss.png</file>
+        <file>addnew.png</file>
+        <file>amount.png</file>
+        <file>avatar.png</file>
+        <file>background1.png</file>
+        <file>bal.png</file>
+        <file>bg.png</file>
+        <file>border.png</file>
+        <file>bud.png</file>
+        <file>budget.png</file>
+        <file>check.png</file>
+        <file>das.png</file>
+        <file>dash.png</file>
+        <file>dashboards.png</file>
+        <file>dashlog.png</file>
+        <file>daspr.png</file>
+        <file>dasproo.png</file>
+        <file>expense.png</file>
+        <file>expensee.png</file>
+        <file>expenses.png</file>
+        <file>Frame 15.png</file>
+        <file>Frame 230.png</file>
+        <file>ICON.png</file>
+        <file>image.png</file>
+        <file>link.png</file>
+        <file>log in button.png</file>
+        <file>log out box.png</file>
+        <file>log out.png</file>
+        <file>log.png</file>
+        <file>logo.png</file>
+        <file>logoutt.png</file>
+        <file>manual.png</file>
+        <file>off.png</file>
+        <file>photo.png</file>
+        <file>pic.png</file>
+        <file>pro.png</file>
+        <file>profile.png</file>
+        <file>profilee.png</file>
+        <file>prr.png</file>
+        <file>reminder.png</file>
+        <file>resources.qrc</file>
+        <file>save.png</file>
+        <file>saving.png</file>
+        <file>savings.png</file>
+        <file>Screenshot 2023-11-22 140345.png</file>
+        <file>settingd.png</file>
+        <file>sign in 1.png</file>
+        <file>spendeise.png</file>
+        <file>wallet with coins and credit card.png</file>
+        <file>warning.png</file>
+        <file>welcome1.png</file>
+    </qresource>
+</RCC>

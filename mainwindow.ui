@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/new/background-images/resources/background1.png);</string>
+   <string notr="true"> border-image: url(:/resources/background1.png);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -30,7 +30,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/logo.png);</string>
+     <string notr="true"> border-image: url(:/resources/logo.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -46,7 +46,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/welcome1.png);</string>
+     <string notr="true"> border-image: url(:/resources/welcome1.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -63,6 +63,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">border-image: none;
+font: 9pt &quot;Bahnschrift&quot;;
 border-color: none;
 color: rgb(255, 255, 255);
 background-color: rgb(133, 84, 181);
@@ -84,6 +85,7 @@ background-color: rgb(133, 84, 181);
     </property>
     <property name="styleSheet">
      <string notr="true">border-image:none;
+font: 9pt &quot;Bahnschrift&quot;;
 border-color:none;
 background-color: rgb(254,252,255);
 color: rgb(133, 84,181);</string>
@@ -103,6 +105,7 @@ color: rgb(133, 84,181);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border:none;
+font: 12pt &quot;Bahnschrift&quot;;
 color:rgb(75,15,96);
 font-size:14px;
 border-image:none;
