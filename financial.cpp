@@ -6,6 +6,7 @@ financial::financial(QWidget *parent) :
     ui(new Ui::financial)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 financial::~financial()

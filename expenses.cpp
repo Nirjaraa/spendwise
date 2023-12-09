@@ -8,6 +8,7 @@ expenses::expenses(QWidget *parent) :
     ui(new Ui::expenses)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 expenses::~expenses()

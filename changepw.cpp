@@ -6,6 +6,7 @@ changepw::changepw(QWidget *parent) :
     ui(new Ui::changepw)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 changepw::~changepw()

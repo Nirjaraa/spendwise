@@ -138,22 +138,7 @@ border-color:none;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{
-    padding: 5px;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(106, 144, 128);
-}
-QPushButton::hover{
-border: 2px solid rgb(35, 106, 52);
-align: center;
-}
-
-QPushButton::pressed{
-    background-color: rgb(35, 106, 51);
-    border: 2px solid rgb(35, 106, 51);
-} 
- </string>
+     <string notr="true">border-image: url(:/resources/log in button.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -188,6 +173,9 @@ color: rgb(0,0,0);
       <height>31</height>
      </rect>
     </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
     <property name="styleSheet">
      <string notr="true">border-image: none;
 font: 9pt &quot;Bahnschrift&quot;;
@@ -195,8 +183,14 @@ border-color: none;
 color: rgb(0,0,0);
 background-color: rgb(242,231,245);
 border-radius: 10px;
-
+padding:5px;
 </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your username</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -235,37 +229,14 @@ border-color: none;
 color: rgb(0,0,0);
 background-color: rgb(242,231,245);
 border-radius: 10px;
-
+padding:5px;
 </string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>250</y>
-      <width>291</width>
-      <height>151</height>
-     </rect>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>gfhd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>150</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PushButton</string>
+    <property name="placeholderText">
+     <string>Enter your password</string>
     </property>
    </widget>
   </widget>

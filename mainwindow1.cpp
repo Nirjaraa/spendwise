@@ -9,10 +9,6 @@ MainWindow1::MainWindow1(QWidget *parent) :
 
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
-    if(!connOpen())
-        ui->label_8->setText("Failed to open the databse");
-    else
-        ui->label_8->setText("Connected");
 
 }
 
@@ -23,7 +19,7 @@ MainWindow1::~MainWindow1()
 
 void MainWindow1::on_pushButton_clicked()
 {
-
+    hide();
     signinn =new signin(this);
     signinn->show();
 }
@@ -41,12 +37,12 @@ void MainWindow1::on_pushButton_2_clicked()
 
     if(!connOpen())
     {
-         ui->label_8->setText("Not connected to database");
+         ui->label_4->setText("Not connected to database");
             //add a fucntion to end the application
     }
     connOpen();
     QSqlQuery qry;
-    qry.prepare("select * from logininfoo where username='"+userId+"' and password='"+passwrd+"'");
+    qry.prepare("select * from logininfoo where username='"+userId+"' and pw='"+passwrd+"'");
 
     if(qry.exec()) // executing querry in
     {
@@ -57,16 +53,18 @@ void MainWindow1::on_pushButton_2_clicked()
         }
         if(count==1)
         {
-            ui->label_8->setText("username and pw correct");
+            ui->label_4->setText("username and pw correct");
             connClose();
             hide();
+
+
             d=new dashboard();
             d->show();
         }
 
         if(count<1)
         {
-            ui->label_8->setText("Username or password is not correct");
+            ui->label_4->setText("incorrect");
         }
 
     }

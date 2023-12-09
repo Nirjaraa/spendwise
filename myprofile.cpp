@@ -6,6 +6,7 @@ myprofile::myprofile(QWidget *parent) :
     ui(new Ui::myprofile)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 myprofile::~myprofile()

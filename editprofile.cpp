@@ -6,6 +6,7 @@ editprofile::editprofile(QWidget *parent) :
     ui(new Ui::editprofile)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 editprofile::~editprofile()

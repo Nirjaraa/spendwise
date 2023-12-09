@@ -42,8 +42,8 @@ border-image: url(:/resources/spendeise.png);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>90</y>
+      <x>450</x>
+      <y>100</y>
       <width>301</width>
       <height>51</height>
      </rect>
@@ -63,7 +63,7 @@ font: 25pt &quot;Bahnschrift&quot;;
 
 
 color: rgb(76,15,96);
-font-size:25px;
+font-size:30px;
 text-decoration: underline;</string>
     </property>
     <property name="text">
@@ -73,8 +73,8 @@ text-decoration: underline;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>120</y>
+      <x>10</x>
+      <y>150</y>
       <width>321</width>
       <height>311</height>
      </rect>
@@ -89,8 +89,8 @@ text-decoration: underline;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>140</y>
+      <x>410</x>
+      <y>160</y>
       <width>341</width>
       <height>41</height>
      </rect>
@@ -124,7 +124,7 @@ text-decoration: underline;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Signup">
     <property name="geometry">
      <rect>
       <x>570</x>
@@ -138,7 +138,7 @@ text-decoration: underline;
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Continue</string>
+     <string>Sign up</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -181,7 +181,7 @@ color: rgb(0,0,0);
      <string>Last name</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="fname_lineEdit">
+   <widget class="QLineEdit" name="firstname">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -201,6 +201,9 @@ padding:5px;
 
 </string>
     </property>
+    <property name="text">
+     <string/>
+    </property>
     <property name="readOnly">
      <bool>false</bool>
     </property>
@@ -208,7 +211,7 @@ padding:5px;
      <string>Enter your first name</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lname_lineEdit_2">
+   <widget class="QLineEdit" name="lastname">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -224,11 +227,14 @@ border-color: none;
 color: rgb(0,0,0);
 background-color: rgb(242,231,245);
 border-radius: 10px;
-
+padding:5px;
 </string>
     </property>
+    <property name="placeholderText">
+     <string>Enter your last name</string>
+    </property>
    </widget>
-   <widget class="QLineEdit" name="uname_lineEdit_3">
+   <widget class="QLineEdit" name="uname">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -244,8 +250,11 @@ border-color: none;
 color: rgb(0,0,0);
 background-color: rgb(242,231,245);
 border-radius: 10px;
-
+padding:5px;
 </string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your username</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -268,7 +277,7 @@ color: rgb(0,0,0);
      <string>Username</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="email_lineEdit_4">
+   <widget class="QLineEdit" name="emaill">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -281,11 +290,14 @@ color: rgb(0,0,0);
      <string notr="true">border-image: none;
 font: 9pt &quot;Bahnschrift&quot;;
 border-color: none;
-color: rgb(255, 255, 255);
+color: rgb();
 background-color: rgb(242,231,245);
 border-radius: 10px;
-
+padding:5px;
 </string>
+    </property>
+    <property name="placeholderText">
+     <string>  eg.abc@gmail.com</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
@@ -303,54 +315,14 @@ font: 16pt &quot;Bahnschrift&quot;;
 border-color: none;
 color: rgb(0,0,0);
  
-text-decoration: underline;
+
 </string>
     </property>
     <property name="text">
      <string>Enter your email address</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="repwlineEdit_5">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>400</y>
-      <width>201</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: none;
-font: 9pt &quot;Bahnschrift&quot;;
-border-color: none;
-color: rgb(0,0,0);
-background-color: rgb(242,231,245);
-border-radius: 10px;
-
-</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>370</y>
-      <width>231</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: none;
-font: 15pt &quot;Bahnschrift&quot;;
-border-color: none;
-color: rgb(0,0,0);
- </string>
-    </property>
-    <property name="text">
-     <string>Re-enter your password</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
+   <widget class="QLineEdit" name="pw">
     <property name="geometry">
      <rect>
       <x>660</x>
@@ -367,14 +339,20 @@ color: rgb(0,0,0);
 background-color: rgb(242,231,245);
 border-radius: 10px;
 
-</string>
+padding:5px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Enter your password</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
       <x>660</x>
-      <y>290</y>
+      <y>300</y>
       <width>191</width>
       <height>16</height>
      </rect>
@@ -388,6 +366,19 @@ color: rgb(0,0,0);
     </property>
     <property name="text">
      <string>Enter your password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>470</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

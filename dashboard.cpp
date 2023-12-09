@@ -6,6 +6,7 @@ dashboard::dashboard(QWidget *parent) :
     ui(new Ui::dashboard)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 dashboard::~dashboard()

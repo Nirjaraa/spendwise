@@ -7,6 +7,7 @@ budget::budget(QWidget *parent) :
     ui(new Ui::budget)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 budget::~budget()
@@ -15,7 +16,7 @@ budget::~budget()
 }
 
 void budget::on_pushButton_clicked()
-{       hide();
+{   hide();
     d=new dashboard(this);
     d->show();
 }

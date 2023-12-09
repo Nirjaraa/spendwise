@@ -8,6 +8,7 @@ newincome::newincome(QWidget *parent) :
     ui(new Ui::newincome)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 newincome::~newincome()

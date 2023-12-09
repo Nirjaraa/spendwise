@@ -26,9 +26,7 @@ SOURCES += \
     myprofile.cpp \
     newincome.cpp \
     savings.cpp \
-    sign2.cpp \
     signin.cpp \
-    signin3.cpp \
     warning.cpp
 
 HEADERS += \
@@ -48,9 +46,7 @@ HEADERS += \
     myprofile.h \
     newincome.h \
     savings.h \
-    sign2.h \
     signin.h \
-    signin3.h \
     warning.h
 
 FORMS += \
@@ -70,9 +66,7 @@ FORMS += \
     myprofile.ui \
     newincome.ui \
     savings.ui \
-    sign2.ui \
     signin.ui \
-    signin3.ui \
     warning.ui
 
 # Default rules for deployment.

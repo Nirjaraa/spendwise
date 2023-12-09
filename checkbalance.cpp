@@ -7,6 +7,7 @@ checkbalance::checkbalance(QWidget *parent) :
     ui(new Ui::checkbalance)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 checkbalance::~checkbalance()

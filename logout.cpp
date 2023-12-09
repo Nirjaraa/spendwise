@@ -6,6 +6,7 @@ logout::logout(QWidget *parent) :
     ui(new Ui::logout)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 logout::~logout()

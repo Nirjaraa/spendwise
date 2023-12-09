@@ -8,6 +8,7 @@ savings::savings(QWidget *parent) :
     ui(new Ui::savings)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 savings::~savings()
@@ -17,8 +18,9 @@ savings::~savings()
 
 void savings::on_pushButton_clicked()
 {
-    hide();
+
     dd= new dashboard(this);
     dd->show();
+    hide();
 }
 

@@ -6,6 +6,7 @@ linkin::linkin(QWidget *parent) :
     ui(new Ui::linkin)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 linkin::~linkin()

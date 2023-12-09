@@ -6,6 +6,7 @@ aboutus::aboutus(QWidget *parent) :
     ui(new Ui::aboutus)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 
 }
 

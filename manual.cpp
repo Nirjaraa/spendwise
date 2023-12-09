@@ -6,6 +6,7 @@ manual::manual(QWidget *parent) :
     ui(new Ui::manual)
 {
     ui->setupUi(this);
+     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
 }
 
 manual::~manual()
