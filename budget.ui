@@ -45,7 +45,7 @@
     <property name="styleSheet">
      <string notr="true">color:rgb(75,15,96);
  
-font: 700 15pt &quot;Bahnschrift&quot;;
+font: 700 15pt &quot;poppins&quot;;
 text-decoration: underline;
  
 </string>
