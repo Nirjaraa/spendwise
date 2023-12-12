@@ -17,159 +17,11 @@
    <string notr="true">background-color:rgb(255,255,255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>-10</x>
-      <y>0</y>
-      <width>141</width>
-      <height>601</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> 
- 
- 
-border-image: url(:/resources/dash.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Bahnschrift&quot;;
- border-image:none;
- border:none;
-background:transparent;
-font-color:rgb(255, 255, 255); 
-  
- </string>
-    </property>
-    <property name="text">
-     <string>                      Dashboard</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>-60</x>
-      <y>110</y>
-      <width>151</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Bahnschrift&quot;;
- border-image:none;
- border:none;
-background:transparent;
-font-color:rgb(255, 255, 255); 
- 
-image: url(:/resources/profile.png);
- 
- 
-</string>
-    </property>
-    <property name="text">
-     <string>                    Profile</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>-136</x>
-      <y>150</y>
-      <width>301</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Bahnschrift&quot;;
- border-image:none;
- border:none;
-background:transparent;
-font-color:rgb(255, 255, 255); 
- 
-image: url(:/resources/settingd.png);
- </string>
-    </property>
-    <property name="text">
-     <string>                      Settings</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>-96</x>
-      <y>190</y>
-      <width>221</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image:none;
- border:none;
-background:transparent;
-font: 12pt &quot;Bahnschrift&quot;;
- image: url(:/resources/manual.png);
-
-font-color:rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>                     Manual</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>560</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Log Out</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>-60</x>
-      <y>230</y>
-      <width>151</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Bahnschrift&quot;;
- border-image:none;
- border:none;
-background:transparent;
-font-color:rgb(255, 255, 255); 
-image:url(:/resources/about.png)
- 
- 
- </string>
-    </property>
-    <property name="text">
-     <string>                   About</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_7">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>500</y>
       <width>80</width>
       <height>24</height>
      </rect>
@@ -194,34 +46,13 @@ image:url(:/resources/about.png)
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>20</y>
-      <width>151</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(75,15,96);
- 
-font: 700 15pt &quot;Bahnschrift&quot;;
-text-decoration: underline;
- 
-</string>
-    </property>
-    <property name="text">
-     <string>MY BALANCE</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>80</y>
-      <width>241</width>
-      <height>221</height>
+      <x>140</x>
+      <y>140</y>
+      <width>371</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -234,34 +65,38 @@ text-decoration: underline;
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>470</y>
-      <width>80</width>
-      <height>24</height>
+      <x>670</x>
+      <y>320</y>
+      <width>111</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: none;
-font: 9pt &quot;Bahnschrift&quot;;
-border-color: none;
-color: rgb(255, 255, 255);
-background-color: rgb(123,49,148);
-border-radius: 10px;
-
+     <string notr="true">background-image:url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+color:white;
+border-radius:30px
 </string>
     </property>
     <property name="text">
-     <string>Done</string>
+     <string>Save</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>320</y>
-      <width>161</width>
+      <x>620</x>
+      <y>200</y>
+      <width>221</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+background-color:rgb(242, 221, 255);
+
+</string>
     </property>
     <property name="text">
      <string>Let's enter your income</string>
@@ -270,13 +105,78 @@ border-radius: 10px;
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>360</y>
-      <width>113</width>
-      <height>24</height>
+      <x>620</x>
+      <y>240</y>
+      <width>201</width>
+      <height>41</height>
      </rect>
     </property>
    </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/back.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="editprofiletitle">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>881</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/title.png);
+color:rgb(255, 255, 255);
+ 
+font: 700 22pt &quot;Bahnschrift&quot;;
+
+ </string>
+    </property>
+    <property name="text">
+     <string> NEW INCOME</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>130</y>
+      <width>311</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(242, 221, 255);
+border-radius:50px
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder>pushButton_8</zorder>
+   <zorder>label_5</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>back</zorder>
+   <zorder>editprofiletitle</zorder>
   </widget>
  </widget>
  <resources/>
