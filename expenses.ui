@@ -78,6 +78,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">border-image: none;
+border-image: url(:/resources/p7.jpg);
 font: 9pt &quot;Bahnschrift&quot;;
 border-color: none;
 color: rgb(255, 255, 255);
@@ -87,7 +88,7 @@ border-radius: 10px;
 </string>
     </property>
     <property name="text">
-     <string>Done</string>
+     <string>save</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="enterexpenses">

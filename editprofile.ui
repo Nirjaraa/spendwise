@@ -184,10 +184,10 @@ color:rgb(151, 18, 161);
    <widget class="QPushButton" name="save">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>440</x>
       <y>460</y>
-      <width>211</width>
-      <height>61</height>
+      <width>81</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -198,7 +198,7 @@ border-radius:30px
 </string>
     </property>
     <property name="text">
-     <string>save changes</string>
+     <string>save </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="country">
