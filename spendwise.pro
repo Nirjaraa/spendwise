@@ -11,12 +11,15 @@ CONFIG += c++17
 SOURCES += \
     aboutus.cpp \
     budget.cpp \
+    cashapp.cpp \
     changepw.cpp \
     checkbalance.cpp \
     dashboard.cpp \
     editprofile.cpp \
+    esewa.cpp \
     expenses.cpp \
     financial.cpp \
+    fonepay.cpp \
     linkin.cpp \
     logout.cpp \
     main.cpp \
@@ -32,12 +35,15 @@ SOURCES += \
 HEADERS += \
     aboutus.h \
     budget.h \
+    cashapp.h \
     changepw.h \
     checkbalance.h \
     dashboard.h \
     editprofile.h \
+    esewa.h \
     expenses.h \
     financial.h \
+    fonepay.h \
     linkin.h \
     logout.h \
     mainwindow.h \
@@ -52,12 +58,15 @@ HEADERS += \
 FORMS += \
     aboutus.ui \
     budget.ui \
+    cashapp.ui \
     changepw.ui \
     checkbalance.ui \
     dashboard.ui \
     editprofile.ui \
+    esewa.ui \
     expenses.ui \
     financial.ui \
+    fonepay.ui \
     linkin.ui \
     logout.ui \
     mainwindow.ui \

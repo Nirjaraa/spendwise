@@ -67,6 +67,10 @@ void MainWindow1::on_pushButton_2_clicked()
             ui->label_4->setText("incorrect");
         }
 
+
+    }
+    if (!qry.exec()) {
+        qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
     }
 
 
