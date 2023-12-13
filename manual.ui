@@ -14,56 +14,23 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>30</y>
-      <width>141</width>
+      <x>290</x>
+      <y>90</y>
+      <width>291</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 25pt &quot;Bahnschrift&quot;;
-Color:dancing pink;
-background: transparent;</string>
-    </property>
-    <property name="text">
-     <string>MANUAL</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>-50</x>
-      <y>0</y>
-      <width>1061</width>
-      <height>351</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/resources/pro.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>80</y>
-      <width>451</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
      <string notr="true">font: 18pt &quot;Bahnschrift&quot;;
+
 color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>How to use spendwise?</string>
+     <string>    How to use spendwise?</string>
     </property>
    </widget>
    <widget class="QPushButton" name="back">
@@ -83,10 +50,43 @@ image: url(:/resources/back.png);</string>
      <string/>
     </property>
    </widget>
-   <zorder>label_2</zorder>
-   <zorder>label</zorder>
-   <zorder>label_3</zorder>
-   <zorder>back</zorder>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>801</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/manualdesc.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="editprofiletitle">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>901</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/title.png);
+color:rgb(255, 255, 255);
+ 
+font: 700 22pt &quot;Bahnschrift&quot;;
+
+ </string>
+    </property>
+    <property name="text">
+     <string>  MANUAL</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

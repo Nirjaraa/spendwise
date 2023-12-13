@@ -21,9 +21,9 @@
     <property name="geometry">
      <rect>
       <x>650</x>
-      <y>130</y>
-      <width>171</width>
-      <height>241</height>
+      <y>100</y>
+      <width>281</width>
+      <height>341</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -52,7 +52,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>90</x>
       <y>480</y>
       <width>80</width>
       <height>24</height>
@@ -121,6 +121,44 @@ border-radius: 10px;
       <width>291</width>
       <height>24</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+image: url(:/resources/back.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="editprofiletitle">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>901</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/title.png);
+color:rgb(255, 255, 255);
+ 
+font: 700 22pt &quot;Bahnschrift&quot;;
+
+ </string>
+    </property>
+    <property name="text">
+     <string>  BUDGET</string>
     </property>
    </widget>
   </widget>
