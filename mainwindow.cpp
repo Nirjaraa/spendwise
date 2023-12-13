@@ -9,8 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
-    QLabel *label1 = new QLabel(this);
-    label1->setText("");
+    //QLabel *label1 = new QLabel(this);
+    //label1->setText("");
 //    label1->setGeometry(QRectF(340,100,30,80));
 
 

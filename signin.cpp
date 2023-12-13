@@ -57,14 +57,11 @@ void signin::on_Signup_clicked()
         {
             ui->label_4->setText("incorrect");
         }
+        if(!qry.exec())
+        {
+
+        }
         connClose();
-
-
-
-
-
-
-
 }
 }
 
