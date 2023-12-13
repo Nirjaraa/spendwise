@@ -79,17 +79,22 @@ color: rgb(0, 0, 0);
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>450</y>
+      <x>90</x>
+      <y>490</y>
       <width>221</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-family: 'Poppins'; font-size: 18px;
-color: rgb(75,15,96);
-border-image:none;
-border-color:none;
+     <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+
 </string>
     </property>
     <property name="text">
@@ -122,10 +127,18 @@ border-color:none;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/log in button.png);</string>
+     <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Log-in</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
