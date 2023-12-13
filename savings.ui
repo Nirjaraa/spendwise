@@ -68,20 +68,26 @@ color:rgb(151, 18, 161);
      <string>Select the amount of money you want to save from your income:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="save">
     <property name="geometry">
      <rect>
       <x>610</x>
       <y>320</y>
+
+      <width>81</width>
+=======
       <width>111</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/resources/p7.jpg);
+     <string notr="true">border-image: url(:/resources/p7.jpg);
 font: 12pt &quot;Bahnschrift&quot;;
-color:white;
-border-radius:30px
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
 </string>
     </property>
     <property name="text">

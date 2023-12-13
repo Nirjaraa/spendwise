@@ -61,5 +61,6 @@
         <file>title.png</file>
         <file>bgbox.png</file>
         <file>ab2.jpg</file>
+        <file>manualdesc.png</file>
     </qresource>
 </RCC>
