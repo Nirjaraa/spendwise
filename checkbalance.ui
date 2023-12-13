@@ -66,7 +66,7 @@ pt &quot;Bahnschrift&quot;;</string>
  color:rgb(75,15,96);</string>
     </property>
     <property name="text">
-     <string>my current balance</string>
+     <string>My current balance</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
@@ -148,7 +148,7 @@ pt &quot;Bahnschrift&quot;;</string>
  color:rgb(75,15,96);</string>
     </property>
     <property name="text">
-     <string>money that can be spent</string>
+     <string>Money that can be spent</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
@@ -182,7 +182,7 @@ pt &quot;Bahnschrift&quot;;</string>
  color:rgb(75,15,96);</string>
     </property>
     <property name="text">
-     <string>money I've spent</string>
+     <string>Money I've spent</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
@@ -199,7 +199,7 @@ pt &quot;Bahnschrift&quot;;</string>
  color:rgb(75,15,96);</string>
     </property>
     <property name="text">
-     <string>my current savings</string>
+     <string>My current savings</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -216,7 +216,7 @@ pt &quot;Bahnschrift&quot;;</string>
 color:rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>click below to add finance to your balance:</string>
+     <string>Click below to add finance to your balance:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -236,7 +236,7 @@ text-decoration: underline;
  </string>
     </property>
     <property name="text">
-     <string>my current status</string>
+     <string>My current status</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">

@@ -1,5 +1,6 @@
 #include "signin.h"
 #include "ui_signin.h"
+#include<QMessageBox>
 
 signin::signin(QWidget *parent) :
     QMainWindow(parent),
@@ -17,15 +18,6 @@ signin::~signin()
 
 
         //connection with database-----------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
 
 void signin::on_Signup_clicked()
 {
@@ -45,8 +37,7 @@ void signin::on_Signup_clicked()
         connOpen();
 
         QSqlQuery qry;
-        qry.prepare("select * from logininfoo where username='"+userId+"' and pw='"+passwrd+"' and fname='"+first+"' and lname='"+last+"' and email='"+email+"'" );
-
+         qry.prepare("insert into  logininfoo (username,pw,fname,lname,email ) values ('"+userId+"','"+passwrd+"','"+first+"','"+last+"','"+email+"')");
         if(qry.exec())  // executing querry in
         {
         int count=0;          //this will the count the number of time it executes the querry
@@ -56,15 +47,17 @@ void signin::on_Signup_clicked()
         }
         if(count==1)
         {
-            ui->label_4->setText("username and pw correct");
+            QMessageBox::critical(this,tr("Save"),tr("Your data has been saved"));
             hide();
             l=new linkin(this);
             l->show();
         }
+
         if(count<1)
         {
             ui->label_4->setText("incorrect");
         }
+        connClose();
 
 
 

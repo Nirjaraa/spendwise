@@ -73,7 +73,10 @@ color:rgb(151, 18, 161);
      <rect>
       <x>610</x>
       <y>320</y>
+
       <width>81</width>
+=======
+      <width>111</width>
       <height>31</height>
      </rect>
     </property>
