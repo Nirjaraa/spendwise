@@ -82,5 +82,6 @@
         <file>coins.png</file>
         <file>dashimg.jpg</file>
         <file>changepw.png</file>
+        <file>water.png</file>
     </qresource>
 </RCC>
