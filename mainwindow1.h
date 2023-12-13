@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "signin.h"
 #include "dashboard.h"
+#include "linkin.h"
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
@@ -53,8 +54,8 @@ private slots:
 
 private:
     Ui::MainWindow1 *ui;
-    signin *signinn;
-    dashboard *d;
+    signin *s;
+    linkin *ll;
 };
 
 #endif // MAINWINDOW1_H

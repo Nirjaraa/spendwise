@@ -1,11 +1,10 @@
 #ifndef SIGNIN_H
 #define SIGNIN_H
-#include "linkin.h"
+#include "mainwindow1.h"
 #include <QMainWindow>
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
-
 
 
 namespace Ui {
@@ -49,9 +48,6 @@ private slots:
 
 private:
     Ui::signin *ui;
-    linkin *l;
-
-
 };
 
 #endif // SIGNIN_H

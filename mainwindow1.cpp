@@ -1,4 +1,5 @@
 #include "mainwindow1.h"
+#include "linkin.h"
 #include "ui_mainwindow1.h"
 #include "mainwindow.h"
 
@@ -20,8 +21,8 @@ MainWindow1::~MainWindow1()
 void MainWindow1::on_pushButton_clicked()
 {
     hide();
-    signinn =new signin(this);
-    signinn->show();
+    s =new signin(this);
+    s->show();
 }
 
 
@@ -63,8 +64,8 @@ void MainWindow1::on_login_clicked()
             hide();
 
 
-            d=new dashboard();
-            d->show();
+            ll= new linkin();
+            ll->show();
         }
 
         if(count<1)

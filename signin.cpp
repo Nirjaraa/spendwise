@@ -1,6 +1,9 @@
 #include "signin.h"
 #include "ui_signin.h"
 #include<QMessageBox>
+#include "mainwindow1.h"
+
+MainWindow1 *mn;
 
 signin::signin(QWidget *parent) :
     QMainWindow(parent),
@@ -38,8 +41,8 @@ void signin::on_Signup_clicked()
         if(!connOpen()){qDebug() << "Not Connected";}
 
         hide();
-        l=new linkin(this);
-        l->show();
+        mn=new MainWindow1(this);
+        mn->show();
 
         QSqlQuery qry;
         qry.prepare("insert into  logininfoo (username,pw,fname,lname,email ) values ('"+userId+"','"+passwrd+"','"+first+"','"+last+"','"+email+"')");
