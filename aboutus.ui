@@ -14,50 +14,17 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>0</y>
-      <width>131</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Bahnschrift&quot;;
-color: dancing pink</string>
-    </property>
-    <property name="text">
-     <string>ABOUT US</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>70</y>
-      <width>871</width>
-      <height>251</height>
+      <x>90</x>
+      <y>80</y>
+      <width>841</width>
+      <height>211</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/resources/aboutuss.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>260</y>
-      <width>791</width>
-      <height>471</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/resources/aboutus2.png);</string>
+     <string notr="true">border-image: url(:/resources/aboutuss.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -75,6 +42,43 @@ color: dancing pink</string>
     <property name="styleSheet">
      <string notr="true">
 image: url(:/resources/back.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="editprofiletitle">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>901</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/title.png);
+color:rgb(255, 255, 255);
+ 
+font: 700 22pt &quot;Bahnschrift&quot;;
+
+ </string>
+    </property>
+    <property name="text">
+     <string>  ABOUT US</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>310</y>
+      <width>841</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/aboutus2.png);</string>
     </property>
     <property name="text">
      <string/>
