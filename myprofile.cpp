@@ -13,3 +13,9 @@ myprofile::~myprofile()
 {
     delete ui;
 }
+
+void myprofile::on_pushButton_8_clicked()
+{
+
+}
+
