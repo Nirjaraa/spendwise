@@ -15,10 +15,6 @@ signin::~signin()
     delete ui;
 }
 
-
-
-        //connection with database-----------------------------------------------------------------------------------------------
-
 void signin::on_Signup_clicked()
 {
 
@@ -29,41 +25,51 @@ void signin::on_Signup_clicked()
         last= ui->lastname->text();
         email= ui->emaill->text();
 
-        if(!connOpen())
-        {
-            ui->label_4->setText("Not connected to database");
-                //add a fucntion to end the application
+        // Check if any of the values is empty
+        if (userId.isEmpty() || passwrd.isEmpty() || first.isEmpty() || last.isEmpty() || email.isEmpty()) {
+            // Show an error message
+            QMessageBox::critical(this, "Error", "Please fill in all the fields.");
+
+            // Return from the function, preventing further execution
+            return;
         }
+
         connOpen();
+        if(!connOpen()){qDebug() << "Not Connected";}
+
+        hide();
+        l=new linkin(this);
+        l->show();
 
         QSqlQuery qry;
-         qry.prepare("insert into  logininfoo (username,pw,fname,lname,email ) values ('"+userId+"','"+passwrd+"','"+first+"','"+last+"','"+email+"')");
+        qry.prepare("insert into  logininfoo (username,pw,fname,lname,email ) values ('"+userId+"','"+passwrd+"','"+first+"','"+last+"','"+email+"')");
+
         if(qry.exec())  // executing querry in
         {
-        int count=0;          //this will the count the number of time it executes the querry
-            while(qry.next())
-        {
-            count++;
-        }
-        if(count==1)
-        {
-            QMessageBox::critical(this,tr("Save"),tr("Your data has been saved"));
-            hide();
-            l=new linkin(this);
-            l->show();
-        }
+            qDebug() << "Heeel";
+            int count=0;          //this will the count the number of time it executes the querry
+            while(qry.next()){
+                qDebug() << "Heeel";
+                count++;
+            }
 
-        if(count<1)
-        {
+            if(count>=1){
+            qDebug() << "Heeel";
+            QMessageBox::critical(this,tr("Save"),tr("Your data has been saved"));
+
+            }
+
+            if(count<1){
             ui->label_4->setText("incorrect");
+            }
         }
 
         if (!qry.exec())
         {
-                qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
+            qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
         }
 
         connClose();
-}
+
 }
 

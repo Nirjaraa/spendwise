@@ -25,15 +25,16 @@ void MainWindow1::on_pushButton_clicked()
 }
 
 
-void MainWindow1::on_pushButton_2_clicked()
-{/*
-*/
+void MainWindow1::on_login_clicked()
+{
   //connection with database-----------------------------------------------------------------------------------------------
 
+    qDebug() << "Hey";
    // MainWindow conn;
     QString userId, passwrd;
     userId = ui->uname->text();
     passwrd= ui->pw->text();
+
 
     if(!connOpen())
     {
@@ -41,17 +42,21 @@ void MainWindow1::on_pushButton_2_clicked()
             //add a fucntion to end the application
     }
     connOpen();
+
     QSqlQuery qry;
     qry.prepare("select * from logininfoo where username='"+userId+"' and pw='"+passwrd+"'");
 
     if(qry.exec()) // executing querry in
     {
+        qDebug() << "Query Executed";
+
         int count=0;          //this will the count the number of time it executes the querry
-        while(qry.next())
-        {
+        while(qry.next()) {
             count++;
+            qDebug() << "1";
         }
-        if(count==1)
+
+        if(count>1)
         {
             ui->label_4->setText("username and pw correct");
             connClose();
@@ -66,16 +71,16 @@ void MainWindow1::on_pushButton_2_clicked()
         {
             ui->label_4->setText("incorrect");
         }
-
-
     }
+
+
     if (!qry.exec()) {
         qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
     }
 
-
-
+    connClose();
 }
+
 
 
 
