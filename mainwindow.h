@@ -23,6 +23,20 @@ public:
 private slots:
     void on_pushButton_3_clicked();
 
+    void on_previous3_clicked();
+
+    void on_previous2_clicked();
+
+    void on_pushButton_7_clicked();
+
+    void on_next4_clicked();
+
+    void on_next3_clicked();
+
+    void on_next2_clicked();
+
+    void on_next1_clicked();
+
 private:
     Ui::MainWindow *ui;
     MainWindow1 *Mainwindow1;
