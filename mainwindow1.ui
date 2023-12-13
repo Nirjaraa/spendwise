@@ -117,7 +117,7 @@ border-radius: 10px;
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="login">
     <property name="geometry">
      <rect>
       <x>150</x>

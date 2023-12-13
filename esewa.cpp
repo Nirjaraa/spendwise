@@ -6,6 +6,8 @@ esewa::esewa(QWidget *parent) :
     ui(new Ui::esewa)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+
 }
 
 esewa::~esewa()

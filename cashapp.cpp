@@ -6,6 +6,8 @@ cashapp::cashapp(QWidget *parent) :
     ui(new Ui::cashapp)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+
 }
 
 cashapp::~cashapp()

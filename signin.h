@@ -45,8 +45,6 @@ public:
     ~signin();
 
 private slots:
-
-
     void on_Signup_clicked();
 
 private:
