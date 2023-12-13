@@ -20,10 +20,10 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>100</y>
-      <width>281</width>
-      <height>341</height>
+      <x>570</x>
+      <y>80</y>
+      <width>321</width>
+      <height>351</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -73,56 +73,6 @@ border-radius: 10px;
      <string>Done</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>190</y>
-      <width>281</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>240</y>
-      <width>281</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>290</y>
-      <width>281</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>410</y>
-      <width>281</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>350</y>
-      <width>291</width>
-      <height>24</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="back">
     <property name="geometry">
      <rect>
@@ -160,6 +110,199 @@ font: 700 22pt &quot;Bahnschrift&quot;;
     <property name="text">
      <string>  BUDGET</string>
     </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>80</y>
+      <width>411</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>409</width>
+       <height>359</height>
+      </rect>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>281</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>281</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>281</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>281</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>300</y>
+        <width>281</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>edit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>300</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>edit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>230</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>edit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>edit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>90</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>edit</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
  </widget>
