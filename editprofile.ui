@@ -191,10 +191,14 @@ color:rgb(151, 18, 161);
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(:/resources/p7.jpg);
-font: 12pt &quot;Bahnschrift&quot;;
-color:white;
-border-radius:30px
+     <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
 </string>
     </property>
     <property name="text">
