@@ -62,5 +62,26 @@
         <file>bgbox.png</file>
         <file>ab2.jpg</file>
         <file>manualdesc.png</file>
+        <file>wallet.jpg</file>
+        <file>piggy.png</file>
+        <file>locker.jpg</file>
+        <file>locker.png</file>
+        <file>money1.jpg</file>
+        <file>win1.png</file>
+        <file>win2.png</file>
+        <file>win3.png</file>
+        <file>win4.png</file>
+        <file>background2.jpg</file>
+        <file>esewa.png</file>
+        <file>esewa2.png</file>
+        <file>cash app 1.jpg</file>
+        <file>cash app 2.png</file>
+        <file>fonepay.png</file>
+        <file>fonepay2.png</file>
+        <file>cashappicon.png</file>
+        <file>coins.png</file>
+        <file>dashimg.jpg</file>
+        <file>changepw.png</file>
+        <file>water.png</file>
     </qresource>
 </RCC>
