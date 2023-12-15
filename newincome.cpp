@@ -16,10 +16,10 @@ newincome::~newincome()
     delete ui;
 }
 
-void newincome::on_pushButton_8_clicked()
-{   hide();
+void newincome::on_back_clicked()
+{
+    hide();
     c=new checkbalance();
     c->show();
-
 }
 

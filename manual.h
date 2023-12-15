@@ -15,6 +15,9 @@ public:
     explicit manual(QWidget *parent = nullptr);
     ~manual();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::manual *ui;
 };

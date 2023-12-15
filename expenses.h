@@ -3,7 +3,6 @@
 #include <QtSql>
 #include <QtDebug>
 #include <QFileInfo>
-
 #include <QMainWindow>
 
 namespace Ui {
@@ -23,7 +22,7 @@ public:
     bool connOpen()//this function will check if database is open or not
     {
         logindb = QSqlDatabase::addDatabase("QSQLITE");
-        logindb.setDatabaseName("C:/spendwise/db/login.db");
+        logindb.setDatabaseName("C:/New Folder/spendwise/db/login.db");
 
         // to see if the database is connected to the program
         if(!logindb.open()){
@@ -45,6 +44,10 @@ private slots:
     void on_pushButton_7_clicked();
 
     void on_save_clicked();
+
+    void on_update_clicked();
+
+    void on_back_clicked();
 
 private:
     Ui::expenses *ui;

@@ -15,6 +15,9 @@ public:
     explicit aboutus(QWidget *parent = nullptr);
     ~aboutus();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::aboutus *ui;
 };

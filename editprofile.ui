@@ -21,9 +21,9 @@
    <widget class="QPushButton" name="back">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>0</y>
-      <width>61</width>
+      <width>71</width>
       <height>71</height>
      </rect>
     </property>
@@ -39,7 +39,7 @@
      <rect>
       <x>70</x>
       <y>0</y>
-      <width>881</width>
+      <width>911</width>
       <height>71</height>
      </rect>
     </property>
@@ -88,7 +88,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>nick name</string>
+     <string>Username</string>
     </property>
    </widget>
    <widget class="QLabel" name="occupation">
@@ -106,7 +106,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>occupation</string>
+     <string>Email</string>
     </property>
    </widget>
    <widget class="QLabel" name="city_2">

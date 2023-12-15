@@ -15,6 +15,9 @@ public:
     explicit editprofile(QWidget *parent = nullptr);
     ~editprofile();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::editprofile *ui;
 };

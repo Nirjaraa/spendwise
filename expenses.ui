@@ -70,7 +70,7 @@
    <widget class="QPushButton" name="save">
     <property name="geometry">
      <rect>
-      <x>670</x>
+      <x>600</x>
       <y>350</y>
       <width>81</width>
       <height>31</height>
@@ -127,7 +127,7 @@ background-color:rgb(222, 189, 255)
      <rect>
       <x>70</x>
       <y>0</y>
-      <width>881</width>
+      <width>921</width>
       <height>71</height>
      </rect>
     </property>
@@ -141,6 +141,30 @@ font: 700 22pt &quot;Bahnschrift&quot;;
     </property>
     <property name="text">
      <string> EXPENSES</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="update">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>350</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: none;
+border-image: url(:/resources/p7.jpg);
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Update</string>
     </property>
    </widget>
   </widget>

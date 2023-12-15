@@ -5,7 +5,11 @@
 #include "budget.h"
 #include "expenses.h"
 #include "savings.h"
-#include"myprofile.h"
+#include"editprofile.h"
+#include"changepw.h"
+#include"manual.h"
+#include"aboutus.h"
+#include"logout.h"
 namespace Ui {
 class dashboard;
 }
@@ -29,13 +33,26 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_10_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_11_clicked();
+
 private:
     Ui::dashboard *ui;
     checkbalance *check;
     budget *bud;
     expenses *ex;
     savings *save;
-    myprofile *neww;
+    editprofile *neww;
+    changepw *s;
+    manual *m;
+    aboutus *a;
+    logout *l;
+
 };
 
 #endif // DASHBOARD_H

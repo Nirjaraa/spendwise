@@ -2,10 +2,10 @@
 #include "ui_mainwindow1.h"
 #include "mainwindow.h"
 #include "linkin.h"
+#include <userdata.h>
 
-
-/*QString userId;
-QSqlRecord userdata*/;
+/*QString username;
+QSqlRecord userdata*/
 linkin *l;
 MainWindow1::MainWindow1(QWidget *parent) :
     QMainWindow(parent),
@@ -57,7 +57,11 @@ void MainWindow1::on_login_clicked()
         }
 
         if (count == 1) {
+            userdata=qry.record();
+            username=userdata.value("username").toString();
+
             ui->label_4->setText("Username and password are correct");
+            username=userId;
             hide();
             l = new linkin();
             l->show();

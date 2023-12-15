@@ -1,5 +1,7 @@
 #include "aboutus.h"
 #include "ui_aboutus.h"
+#include "dashboard.h"
+dashboard *f;
 
 aboutus::aboutus(QWidget *parent) :
     QMainWindow(parent),
@@ -15,3 +17,11 @@ aboutus::~aboutus()
 {
     delete ui;
 }
+
+void aboutus::on_back_clicked()
+{
+    hide();
+    f=new dashboard();
+    f->show();
+}
+

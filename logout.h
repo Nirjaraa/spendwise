@@ -15,6 +15,9 @@ public:
     explicit logout(QWidget *parent = nullptr);
     ~logout();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::logout *ui;
 };

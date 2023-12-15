@@ -1,5 +1,7 @@
 #include "changepw.h"
 #include "ui_changepw.h"
+#include "dashboard.h"
+dashboard *t;
 
 changepw::changepw(QWidget *parent) :
     QMainWindow(parent),
@@ -13,3 +15,11 @@ changepw::~changepw()
 {
     delete ui;
 }
+
+void changepw::on_back_clicked()
+{
+    hide();
+    t=new dashboard();
+    t->show();
+}
+

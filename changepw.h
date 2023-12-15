@@ -15,6 +15,9 @@ public:
     explicit changepw(QWidget *parent = nullptr);
     ~changepw();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::changepw *ui;
 };

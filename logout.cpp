@@ -1,5 +1,7 @@
 #include "logout.h"
 #include "ui_logout.h"
+#include"dashboard.h"
+dashboard *s;
 
 logout::logout(QWidget *parent) :
     QMainWindow(parent),
@@ -13,3 +15,11 @@ logout::~logout()
 {
     delete ui;
 }
+
+void logout::on_pushButton_clicked()
+{
+    hide();
+    s=new dashboard();
+    s->show();
+}
+

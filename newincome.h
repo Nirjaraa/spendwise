@@ -17,7 +17,8 @@ public:
     ~newincome();
 
 private slots:
-    void on_pushButton_8_clicked();
+
+    void on_back_clicked();
 
 private:
     Ui::newincome *ui;

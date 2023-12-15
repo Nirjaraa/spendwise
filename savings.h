@@ -16,7 +16,6 @@ public:
     ~savings();
 
 private slots:
-    void on_pushButton_clicked();
 
 private:
     Ui::savings *ui;
