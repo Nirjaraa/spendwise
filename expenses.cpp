@@ -30,50 +30,88 @@ void expenses::on_pushButton_7_clicked()
 
 void expenses::on_save_clicked()
 {
-//    int expensesText = ui->enterexpenses->text();
-//    expenses = expensesText.toInt();
+    QString expensesText = ui->enterexpenses->text();
+    QString category = ui->comboBox->currentText();
 
-//    // Check if expenses is a valid integer
-//    bool isExpensesInteger = true;  // Assuming it's true by default
+    // Check if expensesText is a valid integer
+    bool isExpensesInteger = true;  // Assuming it's true by default
 
-//    if (expensesText.isEmpty() || expensesText == 0) {
-//        isExpensesInteger = false;
-//    }
+    if (expensesText.isEmpty() || expensesText.toInt(&isExpensesInteger) == 0) {
+        isExpensesInteger = false;
+    }
 
-//    if (!isExpensesInteger) {
-//        QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for expenses"));
-//        return;
-//    }
+    if (!isExpensesInteger) {
+        QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for expenses"));
+        return;
+    }
 
-//    connOpen();
+    // Now expensesText has been successfully converted to an integer
+    int expenses = expensesText.toInt();
 
-//    if (!connOpen()) {
-//        qDebug() << "Not Connected";
-//        return;
-//    }
-
-//    QSqlQuery qry;
-//    qry.prepare("INSERT INTO expenses (expenses) VALUES (:expenses)");
-//    qry.bindValue(":expenses", expenses);
-
-//    if (!qry.exec()) {
-//        qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
-//        connClose();  // Close the connection before returning
-//        return;
-//    }
-
-//    int count = qry.numRowsAffected();
-//    if (count >= 1) {
-//        qDebug() << "Data has been saved";
-//        QMessageBox::information(this, tr("Save"), tr("Your data has been saved"));
-//    } else {
-//        ui->label_4->setText("Incorrect");
-//    }
-
-//    connClose();
+    connOpen();
+    qDebug() << "a";
 
 
-//}
+    if (!connOpen()) {
+        qDebug() << "Not Connected";
+        return;
+    }
+
+    QSqlQuery qry,qry1,qry2;
+    //qry.prepare("INSERT INTO expenses (expenses) VALUES ('"[expenses]+"')");
+    qry.prepare("INSERT INTO expenses (expenses,username,category) VALUES ('" + QString::number(expenses) + "', '" + username + "','"+category+"')");
+    qry1.prepare("UPDATE expenses SET expenses='"+QString::number(expenses)+"' WHERE username='"+username+"' AND category='"+category+"')");
+    qry2.prepare("SELECT * FROM expenses WHERE username="+username+"' AND category='"+category+"')");
+
+    int count=1;
+    qDebug() << "b";
+
+    if(qry2.exec())
+    {
+        qDebug() << "10";
+
+        qDebug() << "1"<<count;
+        QMessageBox::information(this, tr("Error"), qry2.lastError().text());
+        if(count)
+        {
+         qDebug() << "2";
+        }
+        if(qry1.exec()){
+         qDebug()<<"3";
+
+        }
+
+        else {
+        ui->label_4->setText("Incorrect");
+        }
+        QMessageBox::information(this, tr("Error"), qry2.lastError().text());
+        connClose();  // Close the connection before returning
+        return;
+    }
+
+    if (!qry.exec()) {
+        qDebug() << "5";
+        qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
+
+            return;
+    }
+        count = qry.numRowsAffected();
+
+
+
+
+
+
+
+    qDebug() << "Prepared Query:" << qry.lastQuery();
+    qDebug() << "Prepared Query:" << qry1.lastQuery();
+    connClose();
+}
+
+
+
+void expenses::on_update_clicked()
+{
     QString expensesText = ui->enterexpenses->text();
 
     // Check if expensesText is a valid integer
@@ -99,8 +137,7 @@ void expenses::on_save_clicked()
     }
 
     QSqlQuery qry;
-    //qry.prepare("INSERT INTO expenses (expenses) VALUES ('"[expenses]+"')");
-    qry.prepare("INSERT INTO expenses (expenses, username) VALUES ('" + QString::number(expenses) + "', '" + username + "')");
+    qry.prepare("UPDATE expenses SET expenses='"+QString::number(expenses)+"' WHERE username='"+username+"'");
 
 
     qry.bindValue(":expenses", expenses);
@@ -127,52 +164,7 @@ void expenses::on_save_clicked()
 
 
 
-void expenses::on_update_clicked()
-{}
-//    void updateExpenses(int updatedExpenses)
-//    {
-//        // Check if updatedExpenses is a valid integer
-//        bool isUpdatedExpensesInteger = true;  // Assuming it's true by default
 
-//        if (updatedExpenses == 0) {
-//            isUpdatedExpensesInteger = false;
-//        }
-
-//        if (!isUpdatedExpensesInteger) {
-//            QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for expenses"));
-//            return;
-//        }
-
-//        connOpen();
-
-//        if (!connOpen()) {
-//            qDebug() << "Not Connected";
-//            return;
-//        }
-
-//        QSqlQuery qry;
-//        qry.prepare("UPDATE expenses SET expenses = :updatedExpenses WHERE your_condition_here");
-//        qry.bindValue(":updatedExpenses", updatedExpenses);
-
-//        if (!qry.exec()) {
-//            qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
-//            connClose();  // Close the connection before returning
-//            return;
-//        }
-
-//        int count = qry.numRowsAffected();
-//        if (count >= 1) {
-//            qDebug() << "Data has been updated";
-//            QMessageBox::information(this, tr("Update"), tr("Your data has been updated"));
-//        } else {
-//            ui->label_4->setText("Incorrect");
-//        }
-
-//        connClose();
-//    }
-
-
-//}
 
 
 void expenses::on_back_clicked()

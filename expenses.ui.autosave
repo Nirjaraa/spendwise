@@ -70,8 +70,8 @@
    <widget class="QPushButton" name="save">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>350</y>
+      <x>670</x>
+      <y>300</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -132,7 +132,7 @@ font: 700 22pt &quot;Bahnschrift&quot;;
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>130</y>
+      <y>230</y>
       <width>301</width>
       <height>41</height>
      </rect>
@@ -146,11 +146,16 @@ background-color:rgb(222, 189, 255)
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>200</y>
+      <x>570</x>
+      <y>170</y>
       <width>271</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(75,15,96);
+font: 15pt &quot;Bahnschrift&quot;;
+</string>
     </property>
     <item>
      <property name="text">
@@ -172,6 +177,23 @@ background-color:rgb(222, 189, 255)
       <string>Others</string>
      </property>
     </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>140</y>
+      <width>271</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(151, 18, 161);font: 15pt &quot;Bahnschrift&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Select the category</string>
+    </property>
    </widget>
   </widget>
  </widget>
