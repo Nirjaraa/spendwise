@@ -48,8 +48,45 @@ void dashboard::on_pushButton_5_clicked()
 void dashboard::on_pushButton_7_clicked()
 {
     hide();
-    neww= new myprofile();
+    neww= new editprofile();
     neww->show();
 
+}
+
+
+void dashboard::on_pushButton_8_clicked()
+{
+    hide();
+    s=new changepw();
+    s->show();
+
+}
+
+
+void dashboard::on_pushButton_10_clicked()
+{
+    hide();
+    m=new manual();
+    m->show();
+
+}
+
+
+
+void dashboard::on_pushButton_9_clicked()
+{
+    hide();
+    a=new aboutus();
+    a->show();
+
+}
+
+
+
+void dashboard::on_pushButton_11_clicked()
+{
+    hide();
+    l=new logout();
+    l->show();
 }
 

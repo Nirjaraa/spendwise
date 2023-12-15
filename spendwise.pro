@@ -18,7 +18,6 @@ SOURCES += \
     editprofile.cpp \
     esewa.cpp \
     expenses.cpp \
-    financial.cpp \
     fonepay.cpp \
     linkin.cpp \
     logout.cpp \
@@ -26,7 +25,6 @@ SOURCES += \
     mainwindow.cpp \
     mainwindow1.cpp \
     manual.cpp \
-    myprofile.cpp \
     newincome.cpp \
     savings.cpp \
     signin.cpp \
@@ -42,17 +40,16 @@ HEADERS += \
     editprofile.h \
     esewa.h \
     expenses.h \
-    financial.h \
     fonepay.h \
     linkin.h \
     logout.h \
     mainwindow.h \
     mainwindow1.h \
     manual.h \
-    myprofile.h \
     newincome.h \
     savings.h \
     signin.h \
+    userdata.h \
     warning.h
 
 FORMS += \
@@ -65,14 +62,12 @@ FORMS += \
     editprofile.ui \
     esewa.ui \
     expenses.ui \
-    financial.ui \
     fonepay.ui \
     linkin.ui \
     logout.ui \
     mainwindow.ui \
     mainwindow1.ui \
     manual.ui \
-    myprofile.ui \
     newincome.ui \
     savings.ui \
     signin.ui \

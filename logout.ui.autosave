@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>logout</class>
+ <widget class="QMainWindow" name="logout">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255,255,255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>60</y>
+      <width>421</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/log out box.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>140</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>489</x>
+      <y>273</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+    </property>
+    <property name="text">
+     <string>NO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>273</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/p7.jpg);
+font: 12pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+    </property>
+    <property name="text">
+     <string> YES</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
