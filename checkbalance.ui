@@ -79,7 +79,7 @@ pt &quot;Bahnschrift&quot;;</string>
      </rect>
     </property>
     <property name="text">
-     <string>18000</string>
+     <string> </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
@@ -92,7 +92,7 @@ pt &quot;Bahnschrift&quot;;</string>
      </rect>
     </property>
     <property name="text">
-     <string>5000</string>
+     <string> </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_3">
@@ -105,7 +105,7 @@ pt &quot;Bahnschrift&quot;;</string>
      </rect>
     </property>
     <property name="text">
-     <string>3000</string>
+     <string> </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_6">
@@ -118,7 +118,7 @@ pt &quot;Bahnschrift&quot;;</string>
      </rect>
     </property>
     <property name="text">
-     <string>10000</string>
+     <string> </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_7">

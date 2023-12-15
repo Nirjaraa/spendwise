@@ -45,7 +45,7 @@ private slots:
 
     void on_save_clicked();
 
-    void on_update_clicked();
+
 
     void on_back_clicked();
 

@@ -92,7 +92,7 @@ background-color:rgb(242, 221, 255);
      <string>Let's enter your income</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="newincome_2">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -163,7 +163,7 @@ border-radius:50px
    <zorder>label_4</zorder>
    <zorder>pushButton_8</zorder>
    <zorder>label_5</zorder>
-   <zorder>lineEdit</zorder>
+   <zorder>newincome_2</zorder>
    <zorder>back</zorder>
    <zorder>editprofiletitle</zorder>
   </widget>

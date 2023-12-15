@@ -4,8 +4,7 @@
 #include "checkbalance.h"
 #include <userdata.h>
 #include<QMessageBox>
-QString username;
-QSqlRecord userdata;
+
 checkbalance *c;
 
 newincome::newincome(QWidget *parent) :
@@ -31,46 +30,52 @@ void newincome::on_back_clicked()
 
 void newincome::on_pushButton_8_clicked()
 {
-//    QString incometext = ui->newincome_2->text();
-//    int income = incometext.toInt();  // Declare income directly
+    QString incometext = ui->newincome_2->text();
+    int income = incometext.toInt();
 
-//    // Check if income is a valid integer
-//    bool isIncomeInteger = true;  // Assuming it's true by default
+    if (incometext.isEmpty() || income == 0) {
+        QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for income"));
+        return;
+    }
 
-//    if (incometext.isEmpty() || income == 0) {
-//        isIncomeInteger = false;
-//    }
+    if (!connOpen()) {
+        qDebug() << "Not Connected";
+        return;
+    }
 
-//    if (!isIncomeInteger) {
-//        QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for income"));
-//        return;
-//    }
+    QSqlQuery qry,qry1,qry2;
+    qry.prepare("INSERT INTO income (income,username) VALUES ('" + QString::number(income) + "', '" + username + "')");
+    qry1.prepare("UPDATE income SET income='"+QString::number(income)+"' WHERE username='"+username+"'");
+    qry2.prepare("SELECT * FROM income WHERE username='"+username+"'");
 
-//    connOpen();
+    if(qry2.exec()){
 
-//    if (!connOpen()) {
-//        qDebug() << "Not Connected";
-//        return;
-//    }
+        int count = 0;
+        while (qry2.next()) {
+            count++;
+        }
+        if(count >= 1)
+        {
+            if(qry1.exec()){
 
-//    QSqlQuery qry;
-//    qry.prepare("INSERT INTO income (income,username) VALUES ('" + QString::number(expenses) + "', '" + username + "')");
-//    qry.bindValue(":income", income);
+                QMessageBox::critical(this, tr("Updated"), tr("income updated"));
+                return;
+            }
+        }
+        if(count == 0){
 
-//    if (!qry.exec()) {
-//        qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
-//        connClose();  // Close the connection before returning
-//        return;
-//    }
+            if(qry.exec())
+            {
+                QMessageBox::critical(this, tr("Added"), tr("Income added"));
+                return;
+            }
+            else
+            {
+                QMessageBox::critical(this, tr("Error"), tr("Not Added"));
+            }
+        }
+    }
 
-//    int count = qry.numRowsAffected();
-//    if (count >= 1) {
-//        qDebug() << "Data has been saved";
-//        QMessageBox::information(this, tr("Save"), tr("Your data has been saved"));
-//    } else {
-//        ui->label_4->setText("Incorrect");
-//    }
-
-//    connClose();
-//
+    connClose();
 }
+
