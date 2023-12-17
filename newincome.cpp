@@ -12,8 +12,29 @@ newincome::newincome(QWidget *parent) :
     ui(new Ui::newincome)
 {
     ui->setupUi(this);
-     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    connOpen();
+    QSqlQuery fetch;
+    fetch.prepare("SELECT * FROM income WHERE username='"+username+"'");
+    QString initialincome;
+    fetch.exec();
+
+
+    while(fetch.next())
+    {
+        initialincome=fetch.value(0).toString();
+
+    }
+
+    ui->newincome_2->setText(initialincome);
+
+
+    connClose();
+
 }
+
+
+
 
 newincome::~newincome()
 {

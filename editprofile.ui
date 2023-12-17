@@ -55,10 +55,10 @@ font: 700 22pt &quot;Bahnschrift&quot;;
      <string> EDIT PROFILE</string>
     </property>
    </widget>
-   <widget class="QLabel" name="fulllname">
+   <widget class="QLabel" name="firstname">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>100</x>
       <y>80</y>
       <width>81</width>
       <height>21</height>
@@ -70,7 +70,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>Full name</string>
+     <string>Username</string>
     </property>
    </widget>
    <widget class="QLabel" name="nickname_2">
@@ -88,7 +88,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>Username</string>
+     <string>First name</string>
     </property>
    </widget>
    <widget class="QLabel" name="occupation">
@@ -106,7 +106,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>Email</string>
+     <string>Last name</string>
     </property>
    </widget>
    <widget class="QLabel" name="city_2">
@@ -124,7 +124,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>city</string>
+     <string>Email</string>
     </property>
    </widget>
    <widget class="QLabel" name="country_3">
@@ -142,7 +142,7 @@ color:rgb(151, 18, 161);
 </string>
     </property>
     <property name="text">
-     <string>country</string>
+     <string>Esewa id</string>
     </property>
    </widget>
    <widget class="QLabel" name="phoneno">
@@ -166,7 +166,7 @@ color:rgb(151, 18, 161);
    <widget class="QLabel" name="gender_2">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>480</x>
       <y>380</y>
       <width>81</width>
       <height>21</height>
@@ -220,7 +220,7 @@ border-radius:10px;
 padding-left</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="city">
+   <widget class="QLineEdit" name="email">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -235,7 +235,7 @@ border-radius:10px;
 padding-left</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="city_3">
+   <widget class="QLineEdit" name="lname">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -250,7 +250,7 @@ border-radius:10px;
 padding-left</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="city_4">
+   <widget class="QLineEdit" name="fname">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -265,7 +265,7 @@ border-radius:10px;
 padding-left</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="city_5">
+   <widget class="QLineEdit" name="phone">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -280,7 +280,7 @@ border-radius:10px;
 padding-left</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="city_6">
+   <widget class="QLineEdit" name="uname">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -310,7 +310,7 @@ border-radius:10px;
 padding-left</string>
     </property>
    </widget>
-   <zorder>fulllname</zorder>
+   <zorder>firstname</zorder>
    <zorder>back</zorder>
    <zorder>editprofiletitle</zorder>
    <zorder>nickname_2</zorder>
@@ -321,11 +321,11 @@ padding-left</string>
    <zorder>gender_2</zorder>
    <zorder>save</zorder>
    <zorder>country</zorder>
-   <zorder>city</zorder>
-   <zorder>city_3</zorder>
-   <zorder>city_4</zorder>
-   <zorder>city_5</zorder>
-   <zorder>city_6</zorder>
+   <zorder>email</zorder>
+   <zorder>lname</zorder>
+   <zorder>fname</zorder>
+   <zorder>phone</zorder>
+   <zorder>uname</zorder>
    <zorder>country_2</zorder>
   </widget>
  </widget>

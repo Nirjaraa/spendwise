@@ -17,6 +17,8 @@ public:
 
 private slots:
 
+    void on_back_clicked();
+
 private:
     Ui::savings *ui;
 };

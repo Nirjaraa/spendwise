@@ -1,7 +1,7 @@
 #include "savings.h"
 #include "ui_savings.h"
 #include"dashboard.h"
-//dashboard *dd;
+dashboard *j;
 
 savings::savings(QWidget *parent) :
     QMainWindow(parent),
@@ -16,11 +16,10 @@ savings::~savings()
     delete ui;
 }
 
-//void savings::on_pushButton_clicked()
-//{
+void savings::on_back_clicked()
+{   hide();
+    j= new dashboard(this);
+    j->show();
 
-//    dd= new dashboard(this);
-//    dd->show();
-//    hide();
-//}
+}
 
