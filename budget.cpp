@@ -19,7 +19,7 @@ budget::budget(QWidget *parent) :
 
      while(fetch.next())
     {
-          initialwater=fetch.value(0).toString();
+           initialwater=fetch.value(0).toString();
            initialelectricity=fetch.value(1).toString();
            initialeducation=fetch.value(2).toString();
            initialfood=fetch.value(3).toString();
@@ -95,15 +95,10 @@ void budget::on_pushButton_clicked()
      }
 
      QSqlQuery qry,qry1,qry2;
-     qry.prepare("INSERT INTO budget (food,username,electricity,education,water,others) VALUES (:food,:username,:electricity,:education,:water,:others)");
-     qry1.prepare("UPDATE budget SET food=:food,electricity=:electricity,education=:education,water=:water,others=:others WHERE username=:username");
-     qry2.prepare("SELECT * FROM budget WHERE username=:username");
-     qry.bindValue(":food", food);
-     qry.bindValue(":water", water);
-     qry.bindValue(":electricity", electricity);
-     qry.bindValue(":education", education);
-     qry.bindValue(":others", others);
-     qry.bindValue(":username",username);
+     qry.prepare("INSERT INTO budget (food, username, electricity, education, water, others) VALUES ('" + QString::number(food)+ "','" + username + "','" + QString::number(electricity) + "','" + QString::number(education) + "','" + QString::number(water) + "','" + QString::number(others) + "')");
+     qry1.prepare("UPDATE budget SET food='" + QString::number(food) + "', electricity='" + QString::number(electricity) + "', education='" + QString::number(education) + "', water='" + QString::number(water) + "', others='" + QString::number(others) + "' WHERE username='" + username + "'");
+
+     qry2.prepare("SELECT * FROM budget WHERE username='"+username+"'");
 
      qDebug() << "Executed query 1: " << qry1.lastQuery();
      qDebug() << "Executed query 2: " << qry2.lastQuery();
