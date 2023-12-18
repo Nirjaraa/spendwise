@@ -79,7 +79,7 @@ void expenses::on_save_clicked()
 
             if(qry.exec())
             {
-                QMessageBox::critical(this, tr("Added"), tr("Expenses added"));
+                QMessageBox::information(this, tr("Added"), tr("Expenses added"));
                 return;
             }
             else

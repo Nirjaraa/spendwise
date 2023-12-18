@@ -50,7 +50,7 @@ void changepw::on_save_2_clicked()
                 qrychange.bindValue(":username", username);
 
                 if (qrychange.exec()) {
-                    QMessageBox::critical(this, tr("Edit"), tr("Password Updated Successfully"));
+                    QMessageBox::information(this, tr("updated!"), tr("Password Updated Successfully"));
                 } else {
                     QMessageBox::critical(this, tr("ERROR!!!!"), qrychange.lastError().text());
                 }
