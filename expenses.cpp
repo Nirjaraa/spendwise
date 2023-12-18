@@ -71,7 +71,7 @@ void expenses::on_save_clicked()
         {
             if(qry1.exec()){
 
-                QMessageBox::critical(this, tr("Updated"), tr("Expenses updated"));
+                QMessageBox::information(this, tr("Updated"), tr("Expenses updated"));
                 return;
             }
         }

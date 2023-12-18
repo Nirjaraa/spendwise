@@ -58,7 +58,7 @@ void signin::on_Signup_clicked()
 
         if (count >= 1) {
             qDebug() << "Data has been saved";
-            QMessageBox::critical(this, tr("Save"), tr("Your data has been saved"));
+            QMessageBox::information(this, tr("Save"), tr("Your data has been saved"));
         } else {
             ui->label_4->setText("Incorrect");
         }

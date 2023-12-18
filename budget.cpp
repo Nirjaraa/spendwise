@@ -115,7 +115,7 @@ void budget::on_pushButton_clicked()
          {
              if(qry1.exec()){
 
-                 QMessageBox::critical(this, tr("Updated"), tr("Budget  updated"));
+                 QMessageBox::information(this, tr("Updated"), tr("Budget  updated"));
                  return;
              }
          }
@@ -123,7 +123,7 @@ void budget::on_pushButton_clicked()
 
              if(qry.exec())
              {
-                 QMessageBox::critical(this, tr("Added"), tr("Budget added"));
+                 QMessageBox::information(this, tr("Added"), tr("Budget added"));
                  return;
              }
              else

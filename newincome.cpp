@@ -79,7 +79,7 @@ void newincome::on_pushButton_8_clicked()
         {
             if(qry1.exec()){
 
-                QMessageBox::critical(this, tr("Updated"), tr("income updated"));
+                QMessageBox::information(this, tr("Updated"), tr("income updated"));
                 return;
             }
         }
@@ -87,7 +87,7 @@ void newincome::on_pushButton_8_clicked()
 
             if(qry.exec())
             {
-                QMessageBox::critical(this, tr("Added"), tr("Income added"));
+                QMessageBox::information(this, tr("Added"), tr("Income added"));
                 return;
             }
             else
