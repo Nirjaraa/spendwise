@@ -27,8 +27,8 @@ budget::budget(QWidget *parent) :
 
     }
 
-    ui->food->setText(initialfood);
-    ui->electricity->setText(initialelectricity);
+     ui->food->setText(initialfood);
+     ui->electricity->setText(initialelectricity);
      ui->education->setText(initialeducation);
      ui->water->setText(initialwater);
      ui->others->setText(initialothers);
