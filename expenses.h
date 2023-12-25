@@ -41,12 +41,7 @@ public:
     ~expenses();
 
 private slots:
-    void on_pushButton_7_clicked();
-
     void on_save_clicked();
-
-
-
     void on_back_clicked();
 
 private:

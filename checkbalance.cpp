@@ -43,6 +43,8 @@ checkbalance::checkbalance(QWidget *parent) :
     ui->currentsavings->setText(currentsavings);
     ui->moneyspent->setText( QString::number(moneyspent));
     ui->availablebalance->setText( QString::number(available));
+    ui->income->setText(currentsavings);
+
     connClose();
 
 }

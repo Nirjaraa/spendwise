@@ -22,13 +22,6 @@ expenses::~expenses()
     delete ui;
 }
 
-
-void expenses::on_pushButton_7_clicked()
-{
-
-}
-
-
 void expenses::on_save_clicked()
 {
     QString expensesText = ui->enterexpenses->text();
@@ -56,10 +49,44 @@ void expenses::on_save_clicked()
         return;
     }
 
-    QSqlQuery qry,qry1,qry2;
+    int initialmoneyspent,moneyspent,available;
+    QString currentsavings,currentincome;
+    QSqlQuery qry,qry1,qry2,getexpenses,savings,income;
     qry.prepare("INSERT INTO expenses (expenses,username,category) VALUES ('" + QString::number(expenses) + "', '" + username + "','"+category+"')");
     qry1.prepare("UPDATE expenses SET expenses='"+QString::number(expenses)+"' WHERE username='"+username+"' AND category='"+category+"'");
     qry2.prepare("SELECT * FROM expenses WHERE username='"+username+"' AND category='"+category+"'");
+
+    getexpenses.prepare("SELECT * FROM expenses WHERE username='"+username+"'");
+    savings.prepare("SELECT * FROM savings WHERE username='"+username+"'");
+    income.prepare("SELECT * FROM income WHERE username='"+username+"'");
+
+    savings.exec();
+    while(savings.next())
+    {
+        currentsavings=savings.value(0).toString();
+    }
+
+    income.exec();
+    while(income.next())
+    {
+        currentincome=income.value(0).toString();
+    }
+
+    getexpenses.exec();
+    while(getexpenses.next())
+    {
+        initialmoneyspent=getexpenses.value(0).toInt();
+        moneyspent=moneyspent+initialmoneyspent;
+    }
+
+    moneyspent=moneyspent+expensesText.toInt();
+    available=currentincome.toInt()-moneyspent-currentsavings.toInt();
+
+
+    if(available<moneyspent){
+        QMessageBox::warning(this, tr("Error"), tr("Balance Unavailable"));
+        return;
+    }
 
      if(qry2.exec()){
 
@@ -70,7 +97,6 @@ void expenses::on_save_clicked()
         if(count >= 1)
         {
             if(qry1.exec()){
-
                 QMessageBox::information(this, tr("Updated"), tr("Expenses updated"));
                 return;
             }

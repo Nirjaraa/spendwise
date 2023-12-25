@@ -215,14 +215,11 @@ image: url(:/resources/ICON.png);
     </property>
     <property name="styleSheet">
      <string notr="true">font: 12pt &quot;Bahnschrift&quot;;
- border-image:none;
- border:none;
+border-image:none;
+border:none;
 background:transparent;
 color:white;
- 
 image: url(:/resources/profile.png);
- 
- 
 </string>
     </property>
     <property name="text">
@@ -363,7 +360,7 @@ image: url(:/resources/settingd.png);</string>
 border-image: url(:/resources/cashappicon.png);</string>
     </property>
     <property name="text">
-     <string> </string>
+     <string/>
     </property>
    </widget>
    <zorder>label</zorder>

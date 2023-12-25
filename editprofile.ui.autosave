@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>editprofile</class>
+ <widget class="QMainWindow" name="editprofile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255,255,255);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/back.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="editprofiletitle">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>911</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/title.png);
+color:rgb(255, 255, 255);
+ 
+font: 700 22pt &quot;Bahnschrift&quot;;
+
+ </string>
+    </property>
+    <property name="text">
+     <string> EDIT PROFILE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="firstname">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nickname_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>First name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="occupation">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>200</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>Last name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="city_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>260</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="country_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>380</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>Esewa id</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="phoneno">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>320</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>phone number</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gender_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>380</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Bahnschrift&quot;;
+color:rgb(151, 18, 161);
+</string>
+    </property>
+    <property name="text">
+     <string>gender</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>470</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-image: url(:/resources/p7.jpg);
+font: 9pt &quot;Bahnschrift&quot;;
+border-color: none;
+color: rgb(255, 255, 255);
+background-color: rgb(123,49,148);
+border-radius: 10px;
+
+</string>
+    </property>
+    <property name="text">
+     <string>save </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="country">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>400</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>280</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lname">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>160</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left
+color:rgb(0,0,0);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fname">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left
+color:rgb(0,0,0);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phone">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>340</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="uname">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>220</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left
+color:rgb(0,0,0);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="country_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>400</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/resources/bgbox.png);
+border-radius:10px;
+padding-left</string>
+    </property>
+   </widget>
+   <zorder>firstname</zorder>
+   <zorder>back</zorder>
+   <zorder>editprofiletitle</zorder>
+   <zorder>nickname_2</zorder>
+   <zorder>occupation</zorder>
+   <zorder>city_2</zorder>
+   <zorder>country_3</zorder>
+   <zorder>phoneno</zorder>
+   <zorder>gender_2</zorder>
+   <zorder>save</zorder>
+   <zorder>country</zorder>
+   <zorder>email</zorder>
+   <zorder>lname</zorder>
+   <zorder>fname</zorder>
+   <zorder>phone</zorder>
+   <zorder>uname</zorder>
+   <zorder>country_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
