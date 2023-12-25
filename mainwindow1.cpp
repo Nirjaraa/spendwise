@@ -40,7 +40,7 @@ void MainWindow1::on_login_clicked()
     QString passwrd = ui->pw->text();
 
     if (!connOpen()) {
-        ui->label_4->setText("Not connected to the database");
+        qDebug()<<"Not connected to the database";
         return;  // Exit the function if not connected
     }
 
@@ -59,14 +59,13 @@ void MainWindow1::on_login_clicked()
         if (count == 1) {
             userdata=qry.record();
             username=userdata.value("username").toString();
-
-            ui->label_4->setText("Username and password are correct");
             username=userId;
             hide();
             l = new linkin();
             l->show();
         } else {
-            ui->label_4->setText("Incorrect username or password");
+            ui->error2->setText("Incorrect Password");
+            ui->error1->setText("Incorrect Username");
         }
     } else {
         qDebug() << "Query failed to execute! Error: " << qry.lastError().text();

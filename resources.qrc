@@ -1,0 +1,101 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/2.png</file>
+        <file>resources/3.png</file>
+        <file>resources/ab2.jpg</file>
+        <file>resources/about.png</file>
+        <file>resources/aboutus2.png</file>
+        <file>resources/aboutuss.png</file>
+        <file>resources/addnew.png</file>
+        <file>resources/amount.png</file>
+        <file>resources/avatar.png</file>
+        <file>resources/back.png</file>
+        <file>resources/back.svg</file>
+        <file>resources/background1.png</file>
+        <file>resources/background2.jpg</file>
+        <file>resources/bal.png</file>
+        <file>resources/bg.png</file>
+        <file>resources/bgbox.png</file>
+        <file>resources/border.png</file>
+        <file>resources/bud.png</file>
+        <file>resources/budget.png</file>
+        <file>resources/budgetdistributiom.png</file>
+        <file>resources/cash app 1.jpg</file>
+        <file>resources/cash app 2.png</file>
+        <file>resources/cashapp.png</file>
+        <file>resources/cashappicon.png</file>
+        <file>resources/changepw.png</file>
+        <file>resources/check.png</file>
+        <file>resources/checkbalance.png</file>
+        <file>resources/circle.png</file>
+        <file>resources/coins.png</file>
+        <file>resources/das.png</file>
+        <file>resources/dash.png</file>
+        <file>resources/dashboards.png</file>
+        <file>resources/dashimg.jpg</file>
+        <file>resources/dashlog.png</file>
+        <file>resources/daspr.png</file>
+        <file>resources/dasproo.png</file>
+        <file>resources/esewa.png</file>
+        <file>resources/esewa2.png</file>
+        <file>resources/expense.png</file>
+        <file>resources/expensee.png</file>
+        <file>resources/expenses.png</file>
+        <file>resources/expenses1.jpg</file>
+        <file>resources/expensesss.png</file>
+        <file>resources/fonepay.png</file>
+        <file>resources/fonepay2.png</file>
+        <file>resources/Frame 15.png</file>
+        <file>resources/Frame 230.png</file>
+        <file>resources/Group 220.png</file>
+        <file>resources/ICON.png</file>
+        <file>resources/image.png</file>
+        <file>resources/link.png</file>
+        <file>resources/locker.jpg</file>
+        <file>resources/locker.png</file>
+        <file>resources/log in button.png</file>
+        <file>resources/log out box.png</file>
+        <file>resources/log out.png</file>
+        <file>resources/log.png</file>
+        <file>resources/logo.png</file>
+        <file>resources/logoutt.png</file>
+        <file>resources/manual.png</file>
+        <file>resources/manualdesc.png</file>
+        <file>resources/money1.jpg</file>
+        <file>resources/off.png</file>
+        <file>resources/p7.jpg</file>
+        <file>resources/photo.png</file>
+        <file>resources/pic.png</file>
+        <file>resources/piggy.png</file>
+        <file>resources/pro.png</file>
+        <file>resources/profile.png</file>
+        <file>resources/profilee.png</file>
+        <file>resources/prr.png</file>
+        <file>resources/record.png</file>
+        <file>resources/records.png</file>
+        <file>resources/reminder.png</file>
+        <file>resources/save.png</file>
+        <file>resources/saving.png</file>
+        <file>resources/savingss.png</file>
+        <file>resources/Screenshot 2023-11-22 140345.png</file>
+        <file>resources/settingd.png</file>
+        <file>resources/sign in 1.png</file>
+        <file>resources/spendeise.png</file>
+        <file>resources/title.png</file>
+        <file>resources/tittle and dash.jpg</file>
+        <file>resources/wallet with coins and credit card.png</file>
+        <file>resources/wallet.jpg</file>
+        <file>resources/warning.png</file>
+        <file>resources/water.png</file>
+        <file>resources/welcome1.png</file>
+        <file>resources/whiteback.svg</file>
+        <file>resources/win1.png</file>
+        <file>resources/win2.png</file>
+        <file>resources/win3.png</file>
+        <file>resources/win4.png</file>
+        <file>resources/link-background.png</file>
+        <file>resources/budget-background (1).png</file>
+        <file>resources/expense-background.png</file>
+        <file>resources/budget-background.png</file>
+    </qresource>
+</RCC>

@@ -60,22 +60,6 @@ background-color: rgb(255, 247, 255);</string>
      <number>0</number>
     </property>
     <widget class="QWidget" name="page">
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>131</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"> border-image: url(:/resources/logo.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QPushButton" name="next1">
       <property name="geometry">
        <rect>
@@ -180,7 +164,7 @@ font: 12pt &quot;Bahnschrift&quot;;
 color :4B0F60</string>
       </property>
       <property name="text">
-       <string>previous</string>
+       <string>Previous</string>
       </property>
      </widget>
     </widget>
@@ -252,7 +236,7 @@ font: 12pt &quot;Bahnschrift&quot;;
 color :4B0F60</string>
       </property>
       <property name="text">
-       <string>previous</string>
+       <string>Previous</string>
       </property>
      </widget>
     </widget>
@@ -324,7 +308,7 @@ font: 12pt &quot;Bahnschrift&quot;;
 color :4B0F60</string>
       </property>
       <property name="text">
-       <string>previous</string>
+       <string>Previous</string>
       </property>
      </widget>
     </widget>

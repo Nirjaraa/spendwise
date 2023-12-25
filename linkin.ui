@@ -17,17 +17,49 @@
    <string notr="true">background-color:rgb(255,255,255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>941</width>
-      <height>521</height>
+      <x>300</x>
+      <y>470</y>
+      <width>350</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"> border-image: url(:/resources/border.png);</string>
+     <string notr="true">QPushButton {
+    font: 13pt &quot;Bahnschrift&quot;;
+    border: 2px solid rgb(75, 15, 96);  
+    color: rgb(75, 15, 96);
+    background-color:transparent;
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    border: 2px solid none;  
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 15, 96);	
+	}
+ 
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Go to home screen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>571</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/link-background.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -36,55 +68,18 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>60</y>
-      <width>401</width>
-      <height>301</height>
+      <x>330</x>
+      <y>410</y>
+      <width>301</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/new/background-images/resources/link.png);
-border-image: url(:/resources/link.png);</string>
+     <string notr="true">font: 18pt &quot;Bahnschrift&quot;;
+color:rgb(76,15,90);</string>
     </property>
     <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>830</x>
-      <y>430</y>
-      <width>91</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image:none; 
-border-image: url(:/resources/logo.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>393</y>
-      <width>201</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image:none;
-border-color:none;
-color:rgb(116,27,147);
-font-weight: bold;
- text-decoration: underline; font-size:  14px;</string>
-    </property>
-    <property name="text">
-     <string>Go to home screen</string>
+     <string>Let's control your cashflow!</string>
     </property>
    </widget>
   </widget>

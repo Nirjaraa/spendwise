@@ -21,74 +21,18 @@
    <widget class="QLabel" name="image">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>550</x>
       <y>130</y>
-      <width>411</width>
-      <height>331</height>
+      <width>321</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/expensee.png);</string>
+     <string notr="true"> 
+border-image: url(:/resources/expense-background.png);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>870</x>
-      <y>460</y>
-      <width>91</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/logo.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="text">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>90</y>
-      <width>341</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(151, 18, 161);font: 20pt &quot;Bahnschrift&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>Let's enter your expenses</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="save">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>380</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: none;
-border-image: url(:/resources/p7.jpg);
-font: 9pt &quot;Bahnschrift&quot;;
-border-color: none;
-color: rgb(255, 255, 255);
-background-color: rgb(123,49,148);
-border-radius: 10px;
-
-</string>
-    </property>
-    <property name="text">
-     <string>save</string>
     </property>
    </widget>
    <widget class="QPushButton" name="back">
@@ -101,102 +45,168 @@ border-radius: 10px;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/resources/back.png);</string>
+     <string notr="true">image: url(:/resources/back.svg);</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="editprofiletitle">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>0</y>
-      <width>921</width>
-      <height>71</height>
+      <x>130</x>
+      <y>80</y>
+      <width>331</width>
+      <height>381</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image:url(:/resources/title.png);
-color:rgb(255, 255, 255);
- 
-font: 700 22pt &quot;Bahnschrift&quot;;
+     <string notr="true">border-radius:10px;
+background-color:rgb(225,196,255);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>201</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(76,15,90);
+font: 17pt &quot;Bahnschrift&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Select the category</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>140</y>
+       <width>191</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);
+border-radius:none;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Food</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Electricity</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Health</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Education</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Water</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Others</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="enterexpenses">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>210</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-radius:10px;
+ color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);</string>
+     </property>
+     <property name="placeholderText">
+      <string>   Enter your expenses</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>280</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    font: 9pt &quot;Bahnschrift&quot;;
+   
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 15, 96);
+    border-radius: 10px;
+}
 
- </string>
-    </property>
-    <property name="text">
-     <string> EXPENSES</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="enterexpenses">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>290</y>
-      <width>301</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:20px;
-background-color:rgb(222, 189, 255)
+QPushButton:hover {
+    border: 2px solid white;
+	}
+QPushButton:pressed {
+    border: 2px solid rgb(75, 15, 96);
+	 background-color:white;
+	 color:rgb(75, 15, 96);
+cursor: pointinghand;
+}
+ 
+
+
 </string>
-    </property>
-    <property name="placeholderText">
-     <string>   Enter your expenses</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>210</y>
-      <width>281</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(75,15,96);
-font: 15pt &quot;Bahnschrift&quot;;
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(75, 15, 96);
+ border:transparent;
+font: 800 25pt &quot;Bahnschrift&quot;;
 </string>
-    </property>
-    <item>
-     <property name="text">
-      <string>Food</string>
      </property>
-    </item>
-    <item>
      <property name="text">
-      <string>Electricity</string>
+      <string>Expenses</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Health</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Others</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>160</y>
-      <width>271</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(151, 18, 161);font: 17pt &quot;Bahnschrift&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>Select the category</string>
-    </property>
+    </widget>
    </widget>
   </widget>
  </widget>

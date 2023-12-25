@@ -17,279 +17,314 @@
    <string notr="true">background-color:rgb(255,255,255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_4">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>460</y>
-      <width>91</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/logo.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_8">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>150</y>
-      <width>291</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/addnew.png);
-color:rgb(0,0,0);
-font: 15pt &quot;Bahnschrift&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Add new income</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>270</y>
-      <width>171</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
- color:rgb(75,15,96);</string>
-    </property>
-    <property name="text">
-     <string>Current Balance</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="currentbalance">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>280</y>
-      <width>113</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0);
-font: 12pt &quot;Bahnschrift&quot;;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="currentsavings">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>320</y>
-      <width>113</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="moneyspent">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>360</y>
-      <width>113</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="availablebalance">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>400</y>
-      <width>113</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>390</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
- color:rgb(75,15,96);</string>
-    </property>
-    <property name="text">
-     <string>Available Balance</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>350</y>
-      <width>171</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
- color:rgb(75,15,96);</string>
-    </property>
-    <property name="text">
-     <string>Money Spent</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>310</y>
-      <width>171</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
- color:rgb(75,15,96);</string>
-    </property>
-    <property name="text">
-     <string>Current Savings</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>105</y>
+      <x>140</x>
+      <y>40</y>
       <width>411</width>
-      <height>21</height>
+      <height>451</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;Bahnschrift&quot;;
-color:rgb(0, 0, 0);</string>
+     <string notr="true">border-radius:10px;
+background-color:rgb(225,196,255);</string>
     </property>
-    <property name="text">
-     <string>Click below to add finance to your balance:</string>
+    <property name="title">
+     <string/>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>220</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(75,15,96);
+    <widget class="QLineEdit" name="income">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>400</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-radius:10px;
+ color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="currentbalance">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>240</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-radius:10px;
+ color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
+ color:rgb(75,15,96);</string>
+     </property>
+     <property name="text">
+      <string>Current Balance</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>180</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(75,15,96);
  
 font: 700 18pt &quot;Bahnschrift&quot;;
 text-decoration: underline;
  </string>
+     </property>
+     <property name="text">
+      <string> Current Status</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> 
+QPushButton {
+    font: 12pt &quot;Bahnschrift&quot;;
+   
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 15, 96);
+    border-radius: 10px;
+}
+
+QPushButton:hover {
+    border: 2px solid white;
+	}
+QPushButton:pressed {
+    border: 2px solid rgb(75, 15, 96);
+	 background-color:white;
+	 color:rgb(75, 15, 96);
+cursor: pointinghand;
+}
+ 
+
+
+
+font: 15pt &quot;Bahnschrift&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Add new income</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="moneyspent">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>320</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-radius:10px;
+ color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
+ color:rgb(75,15,96);</string>
+     </property>
+     <property name="text">
+      <string>Current Savings</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="currentsavings">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>280</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-radius:10px;
+ color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
+ color:rgb(75,15,96);</string>
+     </property>
+     <property name="text">
+      <string>Money Spent</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>350</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
+ color:rgb(75,15,96);</string>
+     </property>
+     <property name="text">
+      <string>Available Balance</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="availablebalance">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>360</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-radius:10px;
+ color:black;
+font: 12pt &quot;Bahnschrift&quot;;
+ background-color:white;
+border:1px solid rgb(76,15,90);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
+ color:rgb(75,15,96);</string>
+     </property>
+     <property name="text">
+      <string>Income</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>171</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(75, 15, 96);
+ border:transparent;
+font: 800 25pt &quot;Bahnschrift&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>My Balance</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>100</y>
+      <width>311</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> 
+border-image: url(:/resources/budget-background (1).png);</string>
     </property>
     <property name="text">
-     <string> Current Status</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>71</width>
-      <height>71</height>
+      <x>10</x>
+      <y>10</y>
+      <width>50</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/resources/back.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>90</y>
-      <width>381</width>
-      <height>351</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image:url(:/resources/expenses1.jpg)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>0</y>
-      <width>891</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image:url(:/resources/title.png);
-color:rgb(255, 255, 255);
- 
-font: 700 22pt &quot;Bahnschrift&quot;;
-
- </string>
-    </property>
-    <property name="text">
-     <string>   MY BALANCE</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>430</y>
-      <width>211</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Bahnschrift&quot;;
- color:rgb(75,15,96);</string>
-    </property>
-    <property name="text">
-     <string>Income</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="income">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>440</y>
-      <width>113</width>
-      <height>24</height>
-     </rect>
+     <string notr="true"> 
+border-image: url(:/resources/back.svg);</string>
     </property>
     <property name="text">
      <string/>

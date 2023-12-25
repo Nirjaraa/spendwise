@@ -50,6 +50,7 @@ private slots:
 private:
     Ui::signin *ui;
     linkin *l;
+    bool isPasswordValid(const QString& password);
 
 
 };

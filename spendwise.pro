@@ -11,14 +11,11 @@ CONFIG += c++17
 SOURCES += \
     aboutus.cpp \
     budget.cpp \
-    cashapp.cpp \
     changepw.cpp \
     checkbalance.cpp \
     dashboard.cpp \
     editprofile.cpp \
-    esewa.cpp \
     expenses.cpp \
-    fonepay.cpp \
     linkin.cpp \
     logout.cpp \
     main.cpp \
@@ -26,52 +23,46 @@ SOURCES += \
     mainwindow1.cpp \
     manual.cpp \
     newincome.cpp \
+    records.cpp \
     savings.cpp \
-    signin.cpp \
-    warning.cpp
+    signin.cpp
 
 HEADERS += \
     aboutus.h \
     budget.h \
-    cashapp.h \
     changepw.h \
     checkbalance.h \
     dashboard.h \
     editprofile.h \
-    esewa.h \
     expenses.h \
-    fonepay.h \
     linkin.h \
     logout.h \
     mainwindow.h \
     mainwindow1.h \
     manual.h \
     newincome.h \
+    records.h \
     savings.h \
     signin.h \
-    userdata.h \
-    warning.h
+    userdata.h
 
 FORMS += \
     aboutus.ui \
     budget.ui \
-    cashapp.ui \
     changepw.ui \
     checkbalance.ui \
     dashboard.ui \
     editprofile.ui \
-    esewa.ui \
     expenses.ui \
-    fonepay.ui \
     linkin.ui \
     logout.ui \
     mainwindow.ui \
     mainwindow1.ui \
     manual.ui \
     newincome.ui \
+    records.ui \
     savings.ui \
-    signin.ui \
-    warning.ui
+    signin.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -80,4 +71,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     ../../../../spendwise/resources.qrc \
-    resources/resources.qrc
+    resources.qrc

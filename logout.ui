@@ -14,16 +14,16 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(255,255,255);</string>
+   <string notr="true">background-color:rgb(230,215,255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>250</x>
       <y>20</y>
-      <width>601</width>
-      <height>421</height>
+      <width>461</width>
+      <height>441</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -36,14 +36,15 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>50</y>
+      <x>370</x>
+      <y>80</y>
       <width>171</width>
       <height>161</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/Group 220.png);</string>
+     <string notr="true">border-image: url(:/resources/Group 220.png);
+background-color:transparent;</string>
     </property>
     <property name="text">
      <string/>
@@ -75,7 +76,7 @@ border-radius: 10px;
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>360</y>
       <width>101</width>
       <height>31</height>
@@ -98,8 +99,8 @@ border-radius: 10px;
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>240</y>
+      <x>330</x>
+      <y>270</y>
       <width>281</width>
       <height>61</height>
      </rect>
@@ -108,6 +109,7 @@ border-radius: 10px;
      <string notr="true">font: 18pt &quot;Bahnschrift&quot;;
 border-color: none;
 color: rgb(0,0,0);
+background-color:transparent;
  
  </string>
     </property>

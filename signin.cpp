@@ -1,3 +1,4 @@
+#include <QRegularExpression>
 #include "signin.h"
 #include "ui_signin.h"
 #include<QMessageBox>
@@ -17,6 +18,23 @@ signin::~signin()
     delete ui;
 }
 
+bool signin::isPasswordValid(const QString& password) {
+    // Check if password length is greater than 8
+    if (password.length() <= 8) {
+        return false;
+    }
+
+    // Check if password contains at least 1 special characte
+    QRegularExpression specialCharRegex("[!@#$%^&*(),.?\":{}|<>]");
+
+    if (!password.contains(specialCharRegex)) {
+        return false;
+    }
+
+    // Password is valid if it passes both checks
+    return true;
+}
+
 void signin::on_Signup_clicked()
 {
     QString userId, passwrd,first,last,email;
@@ -26,6 +44,8 @@ void signin::on_Signup_clicked()
     last= ui->lastname->text();
     email= ui->emaill->text();
 
+
+
     // Check if any of the values is empty
     if (userId.isEmpty() || passwrd.isEmpty() || first.isEmpty() || last.isEmpty() || email.isEmpty()) {
         // Show an error message
@@ -33,6 +53,11 @@ void signin::on_Signup_clicked()
 
         // Return from the function, preventing further execution
         return;
+    }
+
+
+    if(isPasswordValid(passwrd)){
+         QMessageBox::critical(this, "Error", "Please enter a valid password");
     }
 
     connOpen();
@@ -60,7 +85,7 @@ void signin::on_Signup_clicked()
             qDebug() << "Data has been saved";
             QMessageBox::information(this, tr("Save"), tr("Your data has been saved"));
         } else {
-            ui->label_4->setText("Incorrect");
+            QMessageBox::critical(this, tr("Error"), tr("Incorrect"));
         }
     } else {
         qDebug() << "Query failed to execute! Error: " << qry.lastError().text();

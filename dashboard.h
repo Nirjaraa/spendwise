@@ -10,6 +10,11 @@
 #include"manual.h"
 #include"aboutus.h"
 #include"logout.h"
+#include"records.h"
+#include <QMainWindow>
+#include <QtSql>
+#include <QtDebug>
+#include <QFileInfo>
 namespace Ui {
 class dashboard;
 }
@@ -21,6 +26,28 @@ class dashboard : public QMainWindow
 public:
     explicit dashboard(QWidget *parent = nullptr);
     ~dashboard();
+public:
+    QSqlDatabase logindb; //database created
+    void connClose()
+    {
+        logindb.close();
+        logindb.removeDatabase(QSqlDatabase::defaultConnection); //removing any connections
+    }
+    bool connOpen()//this function will check if database is open or not
+    {
+        logindb = QSqlDatabase::addDatabase("QSQLITE");
+        logindb.setDatabaseName("C:/New Folder/spendwise/db/login.db");
+
+        // to see if the database is connected to the program
+        if(!logindb.open()){
+            qDebug()<<("Failed to open the databse");
+            return false;
+        }
+        else{
+            qDebug()<<("Connected");\
+                return true;
+        }
+    }
 
 private slots:
     void on_pushButton_clicked();
@@ -41,6 +68,10 @@ private slots:
 
     void on_pushButton_11_clicked();
 
+    void on_pushButton_4_clicked();
+
+
+
 private:
     Ui::dashboard *ui;
     checkbalance *check;
@@ -52,6 +83,7 @@ private:
     manual *m;
     aboutus *a;
     logout *l;
+    records *r;
 
 };
 

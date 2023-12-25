@@ -1,6 +1,5 @@
 #ifndef BUDGET_H
 #define BUDGET_H
-
 #include <QMainWindow>
 #include <QtSql>
 #include <QtDebug>
@@ -50,7 +49,6 @@ private slots:
 
     void on_back_clicked();
 
-    void on_pushButton_clicked();
 
 private:
     Ui::budget *ui;

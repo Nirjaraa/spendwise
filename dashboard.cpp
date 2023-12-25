@@ -1,5 +1,7 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
+#include<QMessageBox>
+#include <userdata.h>
 
 dashboard::dashboard(QWidget *parent) :
     QMainWindow(parent),
@@ -7,7 +9,26 @@ dashboard::dashboard(QWidget *parent) :
 {
     ui->setupUi(this);
      setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    connOpen();
+    QSqlQuery fetch;
+    fetch.prepare("SELECT * FROM logininfoo WHERE username='"+username+"'");
+    QString   initialusername;
+
+
+    while(fetch.next())
+    {
+
+        initialusername=fetch.value(0).toString();
+    }
+
+    ui->name->setText(initialusername);
+
+
+    connClose();
+
 }
+
+
 
 dashboard::~dashboard()
 {
@@ -89,4 +110,18 @@ void dashboard::on_pushButton_11_clicked()
     l=new logout();
     l->show();
 }
+
+
+void dashboard::on_pushButton_4_clicked()
+{
+    hide();
+    r=new records();
+    r->show();
+
+}
+
+
+
+
+
 
