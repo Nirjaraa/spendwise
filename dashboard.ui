@@ -20,7 +20,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>730</x>
+      <x>720</x>
       <y>160</y>
       <width>160</width>
       <height>120</height>
@@ -54,8 +54,8 @@ border-image: url(:/resources/budgetdistributiom.png);</string>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>330</y>
+      <x>330</x>
+      <y>320</y>
       <width>160</width>
       <height>120</height>
      </rect>
@@ -71,7 +71,7 @@ border-image: url(:/resources/budgetdistributiom.png);</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>30</y>
+      <y>50</y>
       <width>81</width>
       <height>40</height>
      </rect>
@@ -115,7 +115,7 @@ border-image: url(:/resources/savingss.png);</string>
     <property name="styleSheet">
      <string notr="true">QPushButton{
 font: 12pt &quot;Bahnschrift&quot;;
-background-color:rgb(91,40,114);
+background-color:transparent;
 color:white;
 border:none;
  }
@@ -171,7 +171,7 @@ QPushButton:hover{
     <property name="styleSheet">
      <string notr="true">QPushButton{
 font: 12pt &quot;Bahnschrift&quot;;
-background-color:rgb(91,40,114);
+background-color:transparent;
 color:white;
 border:none;
  }
@@ -199,7 +199,7 @@ QPushButton:hover{
     <property name="styleSheet">
      <string notr="true">QPushButton{
 font: 12pt &quot;Bahnschrift&quot;;
-background-color:rgb(91,40,114);
+background-color:transparent;
 color:white;
 border:none;
  }
@@ -227,7 +227,7 @@ QPushButton:hover{
     <property name="styleSheet">
      <string notr="true">QPushButton{
 font: 12pt &quot;Bahnschrift&quot;;
-background-color:rgb(91,40,114);
+background-color:transparent;
 color:white;
 border:none;
  }
@@ -255,7 +255,7 @@ QPushButton:hover{
     <property name="styleSheet">
      <string notr="true">QPushButton{
 font: 12pt &quot;Bahnschrift&quot;;
-background-color:rgb(91,40,114);
+background-color:transparent;
 color:white;
 border:none;
  }
@@ -281,8 +281,10 @@ QPushButton:hover{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">/*border-image: url(:/resources/p7.jpg);*/
-background-color:rgb(91,40,114);</string>
+     <string notr="true">/*border-image: url(:/resources/p7.jpg);
+background-color:rgb(91,40,114);*/
+
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));</string>
     </property>
     <property name="text">
      <string/>
@@ -305,7 +307,7 @@ background-color:rgb(91,40,114);</string>
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>30</y>
+      <y>50</y>
       <width>200</width>
       <height>40</height>
      </rect>
@@ -323,8 +325,8 @@ color:rgb(76,15,90);
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>330</y>
+      <x>590</x>
+      <y>320</y>
       <width>160</width>
       <height>120</height>
      </rect>
@@ -334,6 +336,34 @@ color:rgb(76,15,90);
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>420</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 12pt &quot;Bahnschrift&quot;;
+background-color:transparent;
+color:white;
+border:none;
+ }
+QPushButton:hover{
+	background-color:white;
+	color:rgb(91,40,114);
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
     </property>
    </widget>
    <zorder>label</zorder>
@@ -351,6 +381,7 @@ color:rgb(76,15,90);
    <zorder>label_15</zorder>
    <zorder>name</zorder>
    <zorder>pushButton_4</zorder>
+   <zorder>reset</zorder>
   </widget>
  </widget>
  <resources/>

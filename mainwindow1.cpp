@@ -3,10 +3,8 @@
 #include "mainwindow.h"
 #include "linkin.h"
 #include <userdata.h>
-
-/*QString username;
-QSqlRecord userdata*/
 linkin *l;
+
 MainWindow1::MainWindow1(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow1)
@@ -14,6 +12,8 @@ MainWindow1::MainWindow1(QWidget *parent) :
 
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
 
 }
 

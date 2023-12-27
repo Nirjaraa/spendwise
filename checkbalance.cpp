@@ -8,6 +8,9 @@ checkbalance::checkbalance(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
+
     connOpen();
     QSqlQuery savings,income,expenses;
     savings.prepare("SELECT * FROM savings WHERE username='"+username+"'");
@@ -15,7 +18,7 @@ checkbalance::checkbalance(QWidget *parent) :
     expenses.prepare("SELECT * FROM expenses WHERE username='"+username+"'");
 
     QString currentsavings,currentincome;
-    int initialmoneyspent,moneyspent,available,currentbalance;
+    int initialmoneyspent = 0,moneyspent=0,available=0,currentbalance=0;
 
     savings.exec();
     while(savings.next())
@@ -36,6 +39,8 @@ checkbalance::checkbalance(QWidget *parent) :
         moneyspent=moneyspent+initialmoneyspent;
     }
 
+    qDebug()<<"InMon1"<<initialmoneyspent;
+    qDebug()<<"Mon1"<<moneyspent;
     available=currentincome.toInt()-moneyspent-currentsavings.toInt();
     currentbalance=currentincome.toInt()-moneyspent;
 
@@ -43,7 +48,18 @@ checkbalance::checkbalance(QWidget *parent) :
     ui->currentsavings->setText(currentsavings);
     ui->moneyspent->setText( QString::number(moneyspent));
     ui->availablebalance->setText( QString::number(available));
-    ui->income->setText(currentsavings);
+    ui->income->setText(currentincome);
+
+    ui->currentbalance->setReadOnly(true);
+    ui->currentbalance->setEnabled(false);
+    ui->currentsavings->setReadOnly(true);
+    ui->currentsavings->setEnabled(false);
+    ui->moneyspent->setReadOnly(true);
+    ui->moneyspent->setEnabled(false);
+    ui->availablebalance->setReadOnly(true);
+    ui->availablebalance->setEnabled(false);
+    ui->income->setReadOnly(true);
+    ui->income->setEnabled(false);
 
     connClose();
 

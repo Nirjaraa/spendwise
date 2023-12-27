@@ -14,108 +14,122 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(230,215,255);</string>
+   <string notr="true">background-color:rgb(255,255,255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_2">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>20</y>
-      <width>461</width>
-      <height>441</height>
+      <x>340</x>
+      <y>60</y>
+      <width>321</width>
+      <height>341</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/log out box.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>80</y>
-      <width>171</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/Group 220.png);
-background-color:transparent;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>360</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/p7.jpg);
-font: 12pt &quot;Bahnschrift&quot;;
-border-color: none;
-color: rgb(255, 255, 255);
-background-color: rgb(123,49,148);
-border-radius: 10px;
-
+     <string notr="true">border-radius:10px;
+background-color:rgb(225,196,255);
 </string>
     </property>
-    <property name="text">
-     <string>NO</string>
+    <property name="title">
+     <string> </string>
     </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>360</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/p7.jpg);
-font: 12pt &quot;Bahnschrift&quot;;
-border-color: none;
-color: rgb(255, 255, 255);
-background-color: rgb(123,49,148);
-border-radius: 10px;
-
-</string>
-    </property>
-    <property name="text">
-     <string> YES</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>270</y>
-      <width>281</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Bahnschrift&quot;;
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>251</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;Bahnschrift&quot;;
 border-color: none;
 color: rgb(0,0,0);
 background-color:transparent;
  
  </string>
-    </property>
-    <property name="text">
-     <string>Do you want to log out?</string>
-    </property>
+     </property>
+     <property name="text">
+      <string>Do you want to log out?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>280</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    font: 12pt &quot;Bahnschrift&quot;;
+    border: 2px solid rgb(75, 15, 96);  
+    color: rgb(75, 15, 96);
+    background-color:transparent;
+   border-radius:10px;
+}
+QPushButton:hover {
+    border: 2px solid none;  
+    color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255)); 
+}</string>
+     </property>
+     <property name="text">
+      <string>Yes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>161</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/resources/Group 220.png);
+background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>280</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 11pt &quot;Bahnschrift&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(75, 15, 96, 255), stop:1 rgba(148,62,143, 255));
+}
+QPushButton:pressed {
+	border: 2px solid rgb(75, 15, 96);
+	color:rgb(75, 15, 96);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(225, 196, 255, 255), stop:0.552885 rgba(255, 255, 255, 255));
+}
+ 
+</string>
+     </property>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

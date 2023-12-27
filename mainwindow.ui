@@ -31,16 +31,22 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border:none;
+     <string notr="true">QPushButton{
+border:none;
 font: 12pt &quot;Bahnschrift&quot;;
 color:rgb(75,15,96);
 font-size:14px;
 border-image:none;
 background: transparent;
+}
+QPushButton:hover{
+border:2px solid rgb(76,15,90);
+border-radius:7px;
+}
  </string>
     </property>
     <property name="text">
-     <string>Skip -&gt;</string>
+     <string>Skip</string>
     </property>
    </widget>
    <widget class="QStackedWidget" name="stackedWidget">
@@ -70,10 +76,21 @@ background-color: rgb(255, 247, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/p7.jpg);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :white</string>
+       <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 11pt &quot;Bahnschrift&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(75, 15, 96, 255), stop:1 rgba(148,62,143, 255));
+}
+QPushButton:pressed {
+	border: 2px solid rgb(75, 15, 96);
+	color:rgb(75, 15, 96);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(225, 196, 255, 255), stop:0.552885 rgba(255, 255, 255, 255));
+}
+ </string>
       </property>
       <property name="text">
        <string>Next</string>
@@ -97,22 +114,6 @@ color :white</string>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>131</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"> border-image: url(:/resources/logo.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QPushButton" name="next2">
       <property name="geometry">
        <rect>
@@ -123,10 +124,21 @@ color :white</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/p7.jpg);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :white</string>
+       <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 11pt &quot;Bahnschrift&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(75, 15, 96, 255), stop:1 rgba(148,62,143, 255));
+}
+QPushButton:pressed {
+	border: 2px solid rgb(75, 15, 96);
+	color:rgb(75, 15, 96);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(225, 196, 255, 255), stop:0.552885 rgba(255, 255, 255, 255));
+}
+ </string>
       </property>
       <property name="text">
        <string>Next</string>
@@ -158,10 +170,19 @@ color :white</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/background1.png);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :4B0F60</string>
+       <string notr="true">QPushButton {
+    font: 12pt &quot;Bahnschrift&quot;;
+    border: 2px solid rgb(75, 15, 96);  
+    color: rgb(75, 15, 96);
+	border-radius:10px;
+    background-color:transparent;}
+
+QPushButton:hover {
+    border: 2px solid none;  
+    color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255)); 
+}
+</string>
       </property>
       <property name="text">
        <string>Previous</string>
@@ -169,22 +190,6 @@ color :4B0F60</string>
      </widget>
     </widget>
     <widget class="QWidget" name="page_5">
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>131</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"> border-image: url(:/resources/logo.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QPushButton" name="next3">
       <property name="geometry">
        <rect>
@@ -195,10 +200,21 @@ color :4B0F60</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/p7.jpg);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :white</string>
+       <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 11pt &quot;Bahnschrift&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(75, 15, 96, 255), stop:1 rgba(148,62,143, 255));
+}
+QPushButton:pressed {
+	border: 2px solid rgb(75, 15, 96);
+	color:rgb(75, 15, 96);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(225, 196, 255, 255), stop:0.552885 rgba(255, 255, 255, 255));
+}
+ </string>
       </property>
       <property name="text">
        <string>Next</string>
@@ -230,10 +246,19 @@ color :white</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/background1.png);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :4B0F60</string>
+       <string notr="true">QPushButton {
+    font: 12pt &quot;Bahnschrift&quot;;
+    border: 2px solid rgb(75, 15, 96);  
+    color: rgb(75, 15, 96);
+	border-radius:10px;
+    background-color:transparent;}
+
+QPushButton:hover {
+    border: 2px solid none;  
+    color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255)); 
+}
+</string>
       </property>
       <property name="text">
        <string>Previous</string>
@@ -241,22 +266,6 @@ color :4B0F60</string>
      </widget>
     </widget>
     <widget class="QWidget" name="page_6">
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>131</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"> border-image: url(:/resources/logo.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
@@ -283,10 +292,21 @@ color :4B0F60</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/p7.jpg);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :white</string>
+       <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 11pt &quot;Bahnschrift&quot;;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+QPushButton:hover {
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(75, 15, 96, 255), stop:1 rgba(148,62,143, 255));
+}
+QPushButton:pressed {
+	border: 2px solid rgb(75, 15, 96);
+	color:rgb(75, 15, 96);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(225, 196, 255, 255), stop:0.552885 rgba(255, 255, 255, 255));
+}
+ </string>
       </property>
       <property name="text">
        <string>Next</string>
@@ -302,10 +322,19 @@ color :white</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/resources/background1.png);
-border-radius:10px;
-font: 12pt &quot;Bahnschrift&quot;;
-color :4B0F60</string>
+       <string notr="true">QPushButton {
+    font: 12pt &quot;Bahnschrift&quot;;
+    border: 2px solid rgb(75, 15, 96);  
+    color: rgb(75, 15, 96);
+	border-radius:10px;
+    background-color:transparent;}
+
+QPushButton:hover {
+    border: 2px solid none;  
+    color: rgb(255, 255, 255);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255)); 
+}
+</string>
       </property>
       <property name="text">
        <string>Previous</string>
@@ -316,7 +345,6 @@ color :4B0F60</string>
    <zorder>stackedWidget</zorder>
    <zorder>pushButton_3</zorder>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <resources/>
  <connections/>

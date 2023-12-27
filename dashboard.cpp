@@ -9,25 +9,68 @@ dashboard::dashboard(QWidget *parent) :
 {
     ui->setupUi(this);
      setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
+
     connOpen();
     QSqlQuery fetch;
     fetch.prepare("SELECT * FROM logininfoo WHERE username='"+username+"'");
-    QString   initialusername;
-
-
-    while(fetch.next())
-    {
-
-        initialusername=fetch.value(0).toString();
+    QString initialusername;
+    if(fetch.exec()){
+        while(fetch.next())
+        {
+            initialusername=fetch.value(0).toString();
+        }
     }
-
     ui->name->setText(initialusername);
-
-
     connClose();
-
 }
 
+void dashboard::on_reset_clicked()
+{
+    connOpen();
+
+    int initialexpense=0,currentexpense=0,currentsavings=0,currentincome=0,extrasavings=0;
+    QSqlQuery savings,income,expenses,records,deleteSavings,deleteIncome,deleteExpenses;
+
+    savings.prepare("SELECT * FROM savings WHERE username='"+username+"'");
+    income.prepare("SELECT * FROM income WHERE username='"+username+"'");
+    expenses.prepare("SELECT * FROM expenses WHERE username='"+username+"'");
+
+    deleteSavings.prepare("DELETE FROM savings WHERE username='"+username+"'");
+    deleteIncome.prepare("DELETE FROM income WHERE username='"+username+"'");
+    deleteExpenses.prepare("DELETE FROM expenses WHERE username='"+username+"'");
+
+    savings.exec();
+    income.exec();
+    expenses.exec();
+
+    while(savings.next())
+    {
+        currentsavings=savings.value(0).toInt();
+    }
+    while(income.next())
+    {
+        currentincome=income.value(0).toInt();
+    }
+    while(expenses.next())
+    {
+        initialexpense=expenses.value(0).toInt();
+        currentexpense=currentexpense+initialexpense;
+    }
+
+    extrasavings = currentincome-currentsavings-currentexpense;
+
+    records.prepare("INSERT INTO records (username, expenses, savings, income, extra) VALUES ('" + username + "', " + QString::number(currentexpense) + ", " + QString::number(currentsavings) + ", " + QString::number(currentincome) + ", " + QString::number(extrasavings) + ")");
+    qDebug()<<records.lastQuery();
+    if(records.exec())
+    {
+        deleteSavings.exec();
+        deleteIncome.exec();
+        deleteExpenses.exec();
+    }
+    connClose();
+}
 
 
 dashboard::~dashboard()
@@ -41,14 +84,12 @@ void dashboard::on_pushButton_clicked()
     check->show();
 }
 
-
 void dashboard::on_pushButton_2_clicked()
 {
     hide();
     bud=new budget();
     bud->show();
 }
-
 
 void dashboard::on_pushButton_3_clicked()
 {
@@ -57,14 +98,12 @@ void dashboard::on_pushButton_3_clicked()
     ex->show();
 }
 
-
 void dashboard::on_pushButton_5_clicked()
 {
     hide();
     save=new savings();
     save->show();
 }
-
 
 void dashboard::on_pushButton_7_clicked()
 {
@@ -74,7 +113,6 @@ void dashboard::on_pushButton_7_clicked()
 
 }
 
-
 void dashboard::on_pushButton_8_clicked()
 {
     hide();
@@ -82,7 +120,6 @@ void dashboard::on_pushButton_8_clicked()
     s->show();
 
 }
-
 
 void dashboard::on_pushButton_10_clicked()
 {
@@ -92,8 +129,6 @@ void dashboard::on_pushButton_10_clicked()
 
 }
 
-
-
 void dashboard::on_pushButton_9_clicked()
 {
     hide();
@@ -102,15 +137,12 @@ void dashboard::on_pushButton_9_clicked()
 
 }
 
-
-
 void dashboard::on_pushButton_11_clicked()
 {
     hide();
     l=new logout();
     l->show();
 }
-
 
 void dashboard::on_pushButton_4_clicked()
 {
@@ -119,9 +151,3 @@ void dashboard::on_pushButton_4_clicked()
     r->show();
 
 }
-
-
-
-
-
-

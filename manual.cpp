@@ -9,6 +9,8 @@ manual::manual(QWidget *parent) :
 {
     ui->setupUi(this);
      setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
 }
 
 manual::~manual()

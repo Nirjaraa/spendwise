@@ -23,7 +23,7 @@
       <x>140</x>
       <y>40</y>
       <width>411</width>
-      <height>451</height>
+      <height>461</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -37,9 +37,9 @@ background-color:rgb(225,196,255);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>400</y>
+       <y>390</y>
        <width>113</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -57,9 +57,9 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>240</y>
+       <y>230</y>
        <width>113</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -79,7 +79,7 @@ border:1px solid rgb(76,15,90);</string>
        <x>30</x>
        <y>230</y>
        <width>171</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -120,41 +120,41 @@ text-decoration: underline;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true"> 
-QPushButton {
-    font: 12pt &quot;Bahnschrift&quot;;
-   
+      <string notr="true">QPushButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 13pt &quot;Bahnschrift&quot;;
     color: rgb(255, 255, 255);
-    background-color: rgb(75, 15, 96);
+    
     border-radius: 10px;
+	
+	
 }
 
 QPushButton:hover {
     border: 2px solid white;
-	}
+}
+
 QPushButton:pressed {
     border: 2px solid rgb(75, 15, 96);
-	 background-color:white;
+	 background-color:transparent ;
 	 color:rgb(75, 15, 96);
-cursor: pointinghand;
 }
  
 
 
-
-font: 15pt &quot;Bahnschrift&quot;;</string>
+</string>
      </property>
      <property name="text">
-      <string>Add new income</string>
+      <string>Update income</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="moneyspent">
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>320</y>
+       <y>310</y>
        <width>113</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -174,7 +174,7 @@ border:1px solid rgb(76,15,90);</string>
        <x>30</x>
        <y>270</y>
        <width>171</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -189,9 +189,9 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>280</y>
+       <y>270</y>
        <width>113</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -211,7 +211,7 @@ border:1px solid rgb(76,15,90);</string>
        <x>30</x>
        <y>310</y>
        <width>171</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -228,7 +228,7 @@ border:1px solid rgb(76,15,90);</string>
        <x>30</x>
        <y>350</y>
        <width>211</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -243,9 +243,9 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>360</y>
+       <y>350</y>
        <width>113</width>
-       <height>24</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -265,7 +265,7 @@ border:1px solid rgb(76,15,90);</string>
        <x>30</x>
        <y>390</y>
        <width>211</width>
-       <height>41</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -299,8 +299,8 @@ font: 800 25pt &quot;Bahnschrift&quot;;
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>100</y>
+      <x>600</x>
+      <y>120</y>
       <width>311</width>
       <height>291</height>
      </rect>

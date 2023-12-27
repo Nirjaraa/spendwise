@@ -73,26 +73,20 @@ background-color:rgb(225,196,255);
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
     font: 9pt &quot;Bahnschrift&quot;;
-   
     color: rgb(255, 255, 255);
-    background-color: rgb(75, 15, 96);
     border-radius: 10px;
 }
-
 QPushButton:hover {
-    border: 2px solid white;
-	}
-QPushButton:pressed {
-    border: 2px solid rgb(75, 15, 96);
-	 background-color:white;
-	 color:rgb(75, 15, 96);
-cursor: pointinghand;
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(75, 15, 96, 255), stop:1 rgba(148,62,143, 255));
 }
- 
-
-
-</string>
+QPushButton:pressed {
+	border: 2px solid rgb(75, 15, 96);
+	color:rgb(75, 15, 96);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(225, 196, 255, 255), stop:0.552885 rgba(255, 255, 255, 255));
+}
+ </string>
      </property>
      <property name="text">
       <string>Login</string>
@@ -184,18 +178,13 @@ padding:5px;
     font: 9pt &quot;Bahnschrift&quot;;
     border: 2px solid rgb(75, 15, 96);  
     color: rgb(75, 15, 96);
-    background-color:transparent;
-    border-radius: 10px;
-}
+    background-color:transparent;}
 
 QPushButton:hover {
     border: 2px solid none;  
     color: rgb(255, 255, 255);
-    background-color: rgb(75, 15, 96);	
-	}
- 
-
-
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255)); 
+}
 </string>
      </property>
      <property name="text">

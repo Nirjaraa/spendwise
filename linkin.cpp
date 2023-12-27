@@ -7,6 +7,8 @@ linkin::linkin(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
 }
 
 linkin::~linkin()

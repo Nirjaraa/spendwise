@@ -38,10 +38,10 @@ border-image: url(:/resources/back.svg);</string>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>80</y>
+      <x>130</x>
+      <y>60</y>
       <width>361</width>
-      <height>351</height>
+      <height>401</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -51,7 +51,7 @@ background-color:rgb(225,196,255);</string>
     <property name="title">
      <string/>
     </property>
-    <widget class="QLineEdit" name="uname">
+    <widget class="QLineEdit" name="lname">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -85,7 +85,7 @@ font: 9pt &quot;Bahnschrift&quot;;
 border:1px solid rgb(76,15,90);</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lname">
+    <widget class="QLineEdit" name="fname">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -102,7 +102,7 @@ font: 9pt &quot;Bahnschrift&quot;;
 border:1px solid rgb(76,15,90);</string>
      </property>
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="occupation">
@@ -124,7 +124,7 @@ border:none;</string>
       <string>Last name</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="fname">
+    <widget class="QLineEdit" name="uname">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -141,7 +141,7 @@ font: 9pt &quot;Bahnschrift&quot;;
 border:1px solid rgb(76,15,90);</string>
      </property>
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </widget>
     <widget class="QLabel" name="city_2">
@@ -222,12 +222,50 @@ font: 800 25pt &quot;Bahnschrift&quot;;
       <string>Profile</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>340</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
+    font: 9pt &quot;Bahnschrift&quot;;
+    color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
+	
+	
+}
+
+QPushButton:hover {
+    border: 2px solid white;
+}
+
+QPushButton:pressed {
+    border: 2px solid rgb(75, 15, 96);
+	 background-color:transparent;
+	 color:rgb(75, 15, 96);
+}
+ 
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>100</y>
+      <x>570</x>
+      <y>120</y>
       <width>300</width>
       <height>270</height>
      </rect>
@@ -236,7 +274,7 @@ font: 800 25pt &quot;Bahnschrift&quot;;
      <string notr="true">border-image: url(:/resources/dashimg.jpg);</string>
     </property>
     <property name="text">
-     <string> </string>
+     <string/>
     </property>
    </widget>
   </widget>

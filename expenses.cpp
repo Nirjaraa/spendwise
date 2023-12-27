@@ -6,7 +6,6 @@
 
 QString username;
 QSqlRecord userdata;
-
 dashboard *h;
 
 expenses::expenses(QWidget *parent) :
@@ -15,6 +14,8 @@ expenses::expenses(QWidget *parent) :
 {
     ui->setupUi(this);
      setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
 }
 
 expenses::~expenses()
@@ -27,9 +28,8 @@ void expenses::on_save_clicked()
     QString expensesText = ui->enterexpenses->text();
     QString category = ui->comboBox->currentText();
 
-    // Check if expensesText is a valid integer
-    bool isExpensesInteger = true;  // Assuming it's true by default
 
+    bool isExpensesInteger = true;
     if (expensesText.isEmpty() || expensesText.toInt(&isExpensesInteger) == 0) {
         isExpensesInteger = false;
     }
@@ -39,8 +39,8 @@ void expenses::on_save_clicked()
         return;
     }
 
-    // Now expensesText has been successfully converted to an integer
     int expenses = expensesText.toInt();
+    int newExpenses = 0;
 
     connOpen();
 
@@ -49,12 +49,12 @@ void expenses::on_save_clicked()
         return;
     }
 
-    int initialmoneyspent,moneyspent,available;
+    int initialmoneyspent=0,moneyspent=0,available;
     QString currentsavings,currentincome;
-    QSqlQuery qry,qry1,qry2,getexpenses,savings,income;
-    qry.prepare("INSERT INTO expenses (expenses,username,category) VALUES ('" + QString::number(expenses) + "', '" + username + "','"+category+"')");
-    qry1.prepare("UPDATE expenses SET expenses='"+QString::number(expenses)+"' WHERE username='"+username+"' AND category='"+category+"'");
-    qry2.prepare("SELECT * FROM expenses WHERE username='"+username+"' AND category='"+category+"'");
+    QSqlQuery insertExpenses,updateExpenses,fetch,getexpenses,savings,income;
+
+    insertExpenses.prepare("INSERT INTO expenses (expenses,username,category) VALUES ('" + QString::number(expenses) + "', '" + username + "','"+category+"')");
+    fetch.prepare("SELECT * FROM expenses WHERE username='"+username+"' AND category='"+category+"'");
 
     getexpenses.prepare("SELECT * FROM expenses WHERE username='"+username+"'");
     savings.prepare("SELECT * FROM savings WHERE username='"+username+"'");
@@ -82,28 +82,31 @@ void expenses::on_save_clicked()
     moneyspent=moneyspent+expensesText.toInt();
     available=currentincome.toInt()-moneyspent-currentsavings.toInt();
 
-
     if(available<moneyspent){
         QMessageBox::warning(this, tr("Error"), tr("Balance Unavailable"));
         return;
     }
 
-     if(qry2.exec()){
-
+    if(fetch.exec())
+    {
         int count = 0;
-        while (qry2.next()) {
+        while (fetch.next())
+        {
             count++;
+            newExpenses = fetch.value(0).toInt()+expensesText.toInt();
         }
+
         if(count >= 1)
         {
-            if(qry1.exec()){
+            updateExpenses.prepare("UPDATE expenses SET expenses='"+QString::number(newExpenses)+"' WHERE username='"+username+"' AND category='"+category+"'");
+            if(updateExpenses.exec()){
                 QMessageBox::information(this, tr("Updated"), tr("Expenses updated"));
                 return;
             }
         }
-        if(count == 0){
-
-            if(qry.exec())
+        if(count == 0)
+        {
+            if(insertExpenses.exec())
             {
                 QMessageBox::information(this, tr("Added"), tr("Expenses added"));
                 return;

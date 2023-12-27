@@ -20,7 +20,7 @@
    <widget class="QLabel" name="image">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>530</x>
       <y>120</y>
       <width>381</width>
       <height>321</height>
@@ -52,7 +52,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>150</x>
       <y>140</y>
       <width>301</width>
       <height>271</height>
@@ -99,7 +99,7 @@ background-color:transparent;
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:2px solid rgb(76,15,90);</string>
      </property>
      <property name="placeholderText">
       <string>Enter your saving amount</string>

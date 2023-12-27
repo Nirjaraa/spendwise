@@ -267,13 +267,14 @@ font: 800 25pt &quot;Bahnschrift&quot;;
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>130</y>
-      <width>391</width>
-      <height>281</height>
+      <y>110</y>
+      <width>400</width>
+      <height>300</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/budget-background.png);</string>
+     <string notr="true"> 
+border-image: url(:/resources/budgetbackground.png);</string>
     </property>
     <property name="text">
      <string/>

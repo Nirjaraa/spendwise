@@ -6,8 +6,6 @@
 #include <QtDebug>
 #include <QFileInfo>
 
-
-
 namespace Ui {
 class signin;
 }

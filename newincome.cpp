@@ -13,6 +13,8 @@ newincome::newincome(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
     connOpen();
     QSqlQuery fetch;
     fetch.prepare("SELECT * FROM income WHERE username='"+username+"'");
@@ -32,8 +34,6 @@ newincome::newincome(QWidget *parent) :
     connClose();
 
 }
-
-
 
 
 newincome::~newincome()

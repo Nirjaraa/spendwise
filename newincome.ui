@@ -43,7 +43,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/resources/back.svg);</string>
+     <string notr="true">image: url(:/resources/back.svg);
+border:none;</string>
     </property>
     <property name="text">
      <string/>
@@ -63,7 +64,7 @@
 background-color:rgb(225,196,255);</string>
     </property>
     <property name="title">
-     <string> </string>
+     <string/>
     </property>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
@@ -98,7 +99,7 @@ font: 800 25pt &quot;Bahnschrift&quot;;
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:2px solid rgb(76,15,90);</string>
      </property>
      <property name="placeholderText">
       <string>  Enter your income</string>
@@ -115,21 +116,23 @@ border:1px solid rgb(76,15,90);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255));
     font: 9pt &quot;Bahnschrift&quot;;
-   
     color: rgb(255, 255, 255);
-    background-color: rgb(75, 15, 96);
+    
     border-radius: 10px;
+	
+	
 }
 
 QPushButton:hover {
     border: 2px solid white;
-	}
+}
+
 QPushButton:pressed {
     border: 2px solid rgb(75, 15, 96);
-	 background-color:white;
+	 background-color:transparent ;
 	 color:rgb(75, 15, 96);
-cursor: pointinghand;
 }
  
 

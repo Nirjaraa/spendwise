@@ -3,6 +3,7 @@
 #include"dashboard.h"
 #include<QMessageBox>
 #include <userdata.h>
+
 dashboard *j;
 
 savings::savings(QWidget *parent) :
@@ -11,11 +12,13 @@ savings::savings(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
+    setWindowTitle("SpendWise");
+    setWindowIcon(QIcon(":/resources/logo.png"));
 
-    connOpen();
     QString initialsavings;
     QSqlQuery fetch;
 
+    connOpen();
     fetch.prepare("SELECT * FROM savings WHERE username='"+username+"'");
     fetch.exec();
 
@@ -42,14 +45,11 @@ void savings::on_back_clicked()
 void savings::on_save_clicked()
 {
     QString savingtext = ui->savings_2->text();
-    bool areFieldsInteger = true;  // Assuming it's true by default
+    int  isFieldEmpty = savingtext.toInt();
 
-    if (savingtext.isEmpty()) {
-        areFieldsInteger = false;
-    }
 
-    if (!areFieldsInteger) {
-        QMessageBox::critical(this, tr("Error"), tr("Please enter valid non-zero integers for all fields"));
+    if (!isFieldEmpty) {
+        QMessageBox::critical(this, tr("Error"), tr("Please enter valid non-zero integers."));
         return;
     }
 
