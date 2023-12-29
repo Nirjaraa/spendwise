@@ -60,14 +60,28 @@ void dashboard::on_reset_clicked()
     }
 
     extrasavings = currentincome-currentsavings-currentexpense;
-
     records.prepare("INSERT INTO records (username, expenses, savings, income, extra) VALUES ('" + username + "', " + QString::number(currentexpense) + ", " + QString::number(currentsavings) + ", " + QString::number(currentincome) + ", " + QString::number(extrasavings) + ")");
-    qDebug()<<records.lastQuery();
-    if(records.exec())
-    {
-        deleteSavings.exec();
-        deleteIncome.exec();
-        deleteExpenses.exec();
+
+    QMessageBox confirmationBox;
+    confirmationBox.setIcon(QMessageBox::Question);
+    confirmationBox.setWindowTitle("Confirmation");
+    confirmationBox.setText("Are you sure you want to reset?");
+
+    // Add buttons to the QMessageBox
+    confirmationBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    confirmationBox.setDefaultButton(QMessageBox::No);
+    int buttonPressed = confirmationBox.exec();
+
+    if (buttonPressed == QMessageBox::Yes) {
+        if(records.exec())
+        {
+            deleteSavings.exec();
+            deleteIncome.exec();
+            deleteExpenses.exec();
+        }
+    }
+    else if (buttonPressed == QMessageBox::No) {
+        return;
     }
     connClose();
 }
@@ -151,3 +165,6 @@ void dashboard::on_pushButton_4_clicked()
     r->show();
 
 }
+
+
+

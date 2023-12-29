@@ -32,7 +32,7 @@ void addTableData(QTableWidget* tableWidget)
         while (getRecords.next())
         {
             tableWidget->setColumnCount(4);
-            tableWidget->setHorizontalHeaderLabels({"Expenses", "Savings", "Income", "Extra"});
+            tableWidget->setHorizontalHeaderLabels({"Expenses", "Savings", "Income", "Remaining"});
             // tableWidget->clearContents();
 
             int expenses = getRecords.value(0).toInt();

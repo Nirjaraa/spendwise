@@ -43,7 +43,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/resources/back.svg);</string>
+     <string notr="true">image: url(:/resources/back.svg);
+border:None;</string>
     </property>
     <property name="text">
      <string/>
@@ -99,7 +100,8 @@ background-color:transparent;
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:2px solid rgb(76,15,90);</string>
+border:2px solid rgb(76,15,90);
+padding:5px;</string>
      </property>
      <property name="placeholderText">
       <string>Enter your saving amount</string>

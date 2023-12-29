@@ -13,6 +13,9 @@ changepw::changepw(QWidget *parent) :
      setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
     setWindowTitle("SpendWise");
     setWindowIcon(QIcon(":/resources/logo.png"));
+     ui->view1->setCheckable(true);
+     ui->view2->setCheckable(true);
+     ui->view3->setCheckable(true);
 }
 
 changepw::~changepw()
@@ -72,6 +75,47 @@ void changepw::on_save_2_clicked()
         connClose();
     } else {
         QMessageBox::information(this, "Empty Field", "Please fill the required fields!!");
+    }
+}
+
+
+
+void changepw::on_view1_clicked(bool checked)
+{
+    if (checked) {
+        ui->view1->setStyleSheet("QPushButton{border-image: url(:/resources/eye-open.svg);background:transparent;}");
+        ui->current->setEchoMode(QLineEdit::Normal);
+    }
+    else{
+        ui->view1->setStyleSheet("QPushButton{border-image: url(:/resources/eye-closed.svg);background:transparent;}");
+        ui->current->setEchoMode(QLineEdit::Password);
+    }
+}
+
+
+
+void changepw::on_view2_clicked(bool checked)
+{
+    if (checked) {
+        ui->view2->setStyleSheet("QPushButton{border-image: url(:/resources/eye-open.svg);background:transparent;}");
+        ui->neww->setEchoMode(QLineEdit::Normal);
+    }
+    else{
+        ui->view2->setStyleSheet("QPushButton{border-image: url(:/resources/eye-closed.svg);background:transparent;}");
+        ui->neww->setEchoMode(QLineEdit::Password);
+    }
+}
+
+
+void changepw::on_view3_clicked(bool checked)
+{
+    if (checked) {
+        ui->view3->setStyleSheet("QPushButton{border-image: url(:/resources/eye-open.svg);background:transparent;}");
+        ui->re->setEchoMode(QLineEdit::Normal);
+    }
+    else{
+        ui->view3->setStyleSheet("QPushButton{border-image: url(:/resources/eye-closed.svg);background:transparent;}");
+        ui->re->setEchoMode(QLineEdit::Password);
     }
 }
 

@@ -45,6 +45,8 @@ public:
 private slots:
     void on_Signup_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::signin *ui;
     linkin *l;

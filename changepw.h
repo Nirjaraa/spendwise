@@ -47,6 +47,12 @@ private slots:
 
     void on_save_2_clicked();
 
+    void on_view1_clicked(bool checked);
+
+    void on_view2_clicked(bool checked);
+
+    void on_view3_clicked(bool checked);
+
 private:
     Ui::changepw *ui;
 };

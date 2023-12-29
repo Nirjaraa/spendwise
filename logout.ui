@@ -20,8 +20,8 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>60</y>
+      <x>320</x>
+      <y>100</y>
       <width>321</width>
       <height>341</height>
      </rect>
@@ -32,7 +32,7 @@ background-color:rgb(225,196,255);
 </string>
     </property>
     <property name="title">
-     <string> </string>
+     <string/>
     </property>
     <widget class="QLabel" name="label">
      <property name="geometry">
@@ -73,7 +73,7 @@ background-color:transparent;
    border-radius:10px;
 }
 QPushButton:hover {
-    border: 2px solid none;  
+    border:none;  
     color: rgb(255, 255, 255);
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3125 rgba(74, 15, 89, 255), stop:1 rgba(148,62,143, 255)); 
 }</string>

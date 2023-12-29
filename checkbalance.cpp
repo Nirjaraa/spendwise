@@ -17,19 +17,17 @@ checkbalance::checkbalance(QWidget *parent) :
     income.prepare("SELECT * FROM income WHERE username='"+username+"'");
     expenses.prepare("SELECT * FROM expenses WHERE username='"+username+"'");
 
-    QString currentsavings,currentincome;
-    int initialmoneyspent = 0,moneyspent=0,available=0,currentbalance=0;
-
+    int initialmoneyspent=0,moneyspent=0,available=0,currentbalance=0,currentsavings=0,currentincome=0;;
     savings.exec();
     while(savings.next())
     {
-        currentsavings=savings.value(0).toString();
+        currentsavings=savings.value(0).toInt();
     }
 
     income.exec();
     while(income.next())
     {
-        currentincome=income.value(0).toString();
+        currentincome=income.value(0).toInt();
     }
 
     expenses.exec();
@@ -39,16 +37,14 @@ checkbalance::checkbalance(QWidget *parent) :
         moneyspent=moneyspent+initialmoneyspent;
     }
 
-    qDebug()<<"InMon1"<<initialmoneyspent;
-    qDebug()<<"Mon1"<<moneyspent;
-    available=currentincome.toInt()-moneyspent-currentsavings.toInt();
-    currentbalance=currentincome.toInt()-moneyspent;
+    available=currentincome-moneyspent-currentsavings;
+    currentbalance=currentincome-moneyspent;
 
     ui->currentbalance->setText( QString::number(currentbalance));
-    ui->currentsavings->setText(currentsavings);
+    ui->currentsavings->setText(QString::number(currentsavings));
     ui->moneyspent->setText( QString::number(moneyspent));
     ui->availablebalance->setText( QString::number(available));
-    ui->income->setText(currentincome);
+    ui->income->setText(QString::number(currentincome));
 
     ui->currentbalance->setReadOnly(true);
     ui->currentbalance->setEnabled(false);
@@ -60,9 +56,7 @@ checkbalance::checkbalance(QWidget *parent) :
     ui->availablebalance->setEnabled(false);
     ui->income->setReadOnly(true);
     ui->income->setEnabled(false);
-
     connClose();
-
 }
 
 checkbalance::~checkbalance()

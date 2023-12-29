@@ -215,11 +215,6 @@ QComboBox QAbstractItemView::item {
      </item>
      <item>
       <property name="text">
-       <string>Health</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
        <string>Education</string>
       </property>
      </item>
@@ -231,6 +226,11 @@ QComboBox QAbstractItemView::item {
      <item>
       <property name="text">
        <string>Others</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string> </string>
       </property>
      </item>
     </widget>

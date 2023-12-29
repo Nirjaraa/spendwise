@@ -15,24 +15,20 @@ newincome::newincome(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
     setWindowTitle("SpendWise");
     setWindowIcon(QIcon(":/resources/logo.png"));
-    connOpen();
-    QSqlQuery fetch;
-    fetch.prepare("SELECT * FROM income WHERE username='"+username+"'");
-    QString initialincome;
-    fetch.exec();
 
+    connOpen();
+    int initialincome=0;
+    QSqlQuery fetch;
+    fetch.prepare("SELECT * FROM income WHERE username='"+username+"'");  
+    fetch.exec();
 
     while(fetch.next())
     {
-        initialincome=fetch.value(0).toString();
-
+        initialincome=fetch.value(0).toInt();
     }
 
-    ui->newincome_2->setText(initialincome);
-
-
+    ui->currentincome->setText(QString::number(initialincome));
     connClose();
-
 }
 
 
@@ -53,6 +49,7 @@ void newincome::on_pushButton_8_clicked()
 {
     QString incometext = ui->newincome_2->text();
     int income = incometext.toInt();
+    int initialincome=0;
 
     if (incometext.isEmpty() || income == 0) {
         QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for income"));
@@ -64,30 +61,34 @@ void newincome::on_pushButton_8_clicked()
         return;
     }
 
-    QSqlQuery qry,qry1,qry2;
-    qry.prepare("INSERT INTO income (income,username) VALUES ('" + QString::number(income) + "', '" + username + "')");
-    qry1.prepare("UPDATE income SET income='"+QString::number(income)+"' WHERE username='"+username+"'");
-    qry2.prepare("SELECT * FROM income WHERE username='"+username+"'");
+    QSqlQuery insert,update,check;
+    insert.prepare("INSERT INTO income (income,username) VALUES ('" + QString::number(income) + "', '" + username + "')");
+     check.prepare("SELECT * FROM income WHERE username='"+username+"'");
 
-    if(qry2.exec()){
-
+    if(check.exec()){
         int count = 0;
-        while (qry2.next()) {
+        while (check.next()) {
             count++;
+            initialincome=check.value(0).toInt();
+            income=income+initialincome;
         }
         if(count >= 1)
         {
-            if(qry1.exec()){
-
+            if(update.exec("UPDATE income SET income='"+QString::number(income)+"' WHERE username='"+username+"'")){
+                ui->currentincome->setText(QString::number(income));
                 QMessageBox::information(this, tr("Updated"), tr("income updated"));
+                ui->newincome_2->setText(QString::number(income=0));
+
                 return;
             }
         }
         if(count == 0){
-
-            if(qry.exec())
+            if(insert.exec())
             {
+                ui->currentincome->setText(QString::number(income));
                 QMessageBox::information(this, tr("Added"), tr("Income added"));
+                ui->newincome_2->setText(QString::number(income=0));
+
                 return;
             }
             else

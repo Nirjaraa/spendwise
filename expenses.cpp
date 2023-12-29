@@ -3,7 +3,6 @@
 #include "dashboard.h"
 #include <userdata.h>
 #include <QMessageBox>
-
 QString username;
 QSqlRecord userdata;
 dashboard *h;
@@ -28,20 +27,21 @@ void expenses::on_save_clicked()
     QString expensesText = ui->enterexpenses->text();
     QString category = ui->comboBox->currentText();
 
-
+    int expenses = expensesText.toInt();
+    int newExpenses = 0;
     bool isExpensesInteger = true;
     if (expensesText.isEmpty() || expensesText.toInt(&isExpensesInteger) == 0) {
         isExpensesInteger = false;
     }
 
-    if (!isExpensesInteger) {
+    if (!isExpensesInteger || expenses==0) {
         QMessageBox::critical(this, tr("Error"), tr("Please enter a valid non-zero integer for expenses"));
         return;
     }
-
-    int expenses = expensesText.toInt();
-    int newExpenses = 0;
-
+    if(expenses<0){
+        QMessageBox::critical(this, tr("Error"), tr("Please enter a positive integer for expenses"));
+        return;
+    }
     connOpen();
 
     if (!connOpen()) {
@@ -95,8 +95,7 @@ void expenses::on_save_clicked()
             count++;
             newExpenses = fetch.value(0).toInt()+expensesText.toInt();
         }
-
-        if(count >= 1)
+       if(count >= 1)
         {
             updateExpenses.prepare("UPDATE expenses SET expenses='"+QString::number(newExpenses)+"' WHERE username='"+username+"' AND category='"+category+"'");
             if(updateExpenses.exec()){

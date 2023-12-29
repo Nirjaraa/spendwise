@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "linkin.h"
 #include <userdata.h>
+#include <QMessageBox>
 linkin *l;
 
 MainWindow1::MainWindow1(QWidget *parent) :
@@ -14,6 +15,8 @@ MainWindow1::MainWindow1(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::MSWindowsFixedSizeDialogHint);
     setWindowTitle("SpendWise");
     setWindowIcon(QIcon(":/resources/logo.png"));
+
+    ui->view->setCheckable(true);
 
 }
 
@@ -32,10 +35,6 @@ void MainWindow1::on_pushButton_clicked()
 
 void MainWindow1::on_login_clicked()
 {
-  //connection with database-----------------------------------------------------------------------------------------------
-
-    qDebug() << "Hey";
-
     QString userId = ui->uname->text();
     QString passwrd = ui->pw->text();
 
@@ -45,34 +44,38 @@ void MainWindow1::on_login_clicked()
     }
 
     QSqlQuery qry;
-    qry.prepare("SELECT * FROM logininfoo WHERE username = :userId AND pw = :passwrd");
-    qry.bindValue(":userId", userId);
-    qry.bindValue(":passwrd", passwrd);
+    qry.prepare("SELECT * FROM logininfoo WHERE username = '" + userId + "' AND pw = '" + passwrd + "'");
 
     if (qry.exec()) {
-        int count = 0;
         while (qry.next()) {
-            count++;
-            qDebug() << "1";
+            if(qry.value(0).toBool()){
+                username=userId;
+                hide();
+                l = new linkin();
+                l->show();
+
+            }else if(!qry.value(0).toBool()){
+                ui->error2->setText("Username and Password doesn't match!");
+                ui->error1->setText("Username and Password doesn't match!");
+            }
         }
 
-        if (count == 1) {
-            userdata=qry.record();
-            username=userdata.value("username").toString();
-            username=userId;
-            hide();
-            l = new linkin();
-            l->show();
-        } else {
-            ui->error2->setText("Incorrect Password");
-            ui->error1->setText("Incorrect Username");
-        }
-    } else {
-        qDebug() << "Query failed to execute! Error: " << qry.lastError().text();
     }
 
     connClose();
 }
 
 
+void MainWindow1::on_view_clicked(bool checked)
+{
+    if (checked) {
+        ui->view->setStyleSheet("QPushButton{border-image: url(:/resources/eye-open.svg);background:transparent;}");
+        ui->pw->setEchoMode(QLineEdit::Normal);
+    }
+    else{
+        ui->view->setStyleSheet("QPushButton{border-image: url(:/resources/eye-closed.svg);background:transparent;}");
+        ui->pw->setEchoMode(QLineEdit::Password);
+    }
+
+}
 

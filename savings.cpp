@@ -46,10 +46,15 @@ void savings::on_save_clicked()
 {
     QString savingtext = ui->savings_2->text();
     int  isFieldEmpty = savingtext.toInt();
+    int  saving = savingtext.toInt();
 
 
-    if (!isFieldEmpty) {
+    if (!isFieldEmpty || saving== 0) {
         QMessageBox::critical(this, tr("Error"), tr("Please enter valid non-zero integers."));
+        return;
+    }
+    if(saving<0){
+        QMessageBox::critical(this, tr("Error"), tr("Please enter  positive integers for savings."));
         return;
     }
 

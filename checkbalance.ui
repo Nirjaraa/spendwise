@@ -37,7 +37,7 @@ background-color:rgb(225,196,255);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>390</y>
+       <y>270</y>
        <width>113</width>
        <height>31</height>
       </rect>
@@ -47,7 +47,8 @@ background-color:rgb(225,196,255);</string>
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:1px solid rgb(76,15,90);
+padding:5px;</string>
      </property>
      <property name="text">
       <string/>
@@ -57,7 +58,7 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>230</y>
+       <y>350</y>
        <width>113</width>
        <height>31</height>
       </rect>
@@ -67,7 +68,8 @@ border:1px solid rgb(76,15,90);</string>
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:1px solid rgb(76,15,90);
+padding:5px;</string>
      </property>
      <property name="text">
       <string/>
@@ -77,7 +79,7 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>230</y>
+       <y>350</y>
        <width>171</width>
        <height>31</height>
       </rect>
@@ -145,7 +147,7 @@ QPushButton:pressed {
 </string>
      </property>
      <property name="text">
-      <string>Update income</string>
+      <string>Add New Income</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="moneyspent">
@@ -162,7 +164,8 @@ QPushButton:pressed {
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:1px solid rgb(76,15,90);
+padding:5px;</string>
      </property>
      <property name="text">
       <string/>
@@ -172,7 +175,7 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>270</y>
+       <y>390</y>
        <width>171</width>
        <height>31</height>
       </rect>
@@ -182,14 +185,14 @@ border:1px solid rgb(76,15,90);</string>
  color:rgb(75,15,96);</string>
      </property>
      <property name="text">
-      <string>Current Savings</string>
+      <string>Savings</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="currentsavings">
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>270</y>
+       <y>390</y>
        <width>113</width>
        <height>31</height>
       </rect>
@@ -199,7 +202,8 @@ border:1px solid rgb(76,15,90);</string>
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:1px solid rgb(76,15,90);
+padding:5px;</string>
      </property>
      <property name="text">
       <string/>
@@ -226,7 +230,7 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>350</y>
+       <y>230</y>
        <width>211</width>
        <height>31</height>
       </rect>
@@ -243,7 +247,7 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>350</y>
+       <y>230</y>
        <width>113</width>
        <height>31</height>
       </rect>
@@ -253,7 +257,8 @@ border:1px solid rgb(76,15,90);</string>
  color:black;
 font: 12pt &quot;Bahnschrift&quot;;
  background-color:white;
-border:1px solid rgb(76,15,90);</string>
+border:1px solid rgb(76,15,90);
+padding:5px;</string>
      </property>
      <property name="text">
       <string/>
@@ -263,7 +268,7 @@ border:1px solid rgb(76,15,90);</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>390</y>
+       <y>270</y>
        <width>211</width>
        <height>31</height>
       </rect>
@@ -318,8 +323,8 @@ border-image: url(:/resources/budget-background (1).png);</string>
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>50</width>
-      <height>50</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">

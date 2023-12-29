@@ -34,9 +34,9 @@ image: url(:/resources/back.svg);</string>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>70</y>
-      <width>851</width>
+      <x>40</x>
+      <y>80</y>
+      <width>881</width>
       <height>421</height>
      </rect>
     </property>
@@ -50,7 +50,7 @@ background-color:rgb(225,196,255);</string>
     <widget class="QTextBrowser" name="textBrowser_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>250</y>
        <width>831</width>
        <height>151</height>
@@ -82,7 +82,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <widget class="QTextBrowser" name="textBrowser">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>100</y>
        <width>381</width>
        <height>131</height>
@@ -113,7 +113,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <widget class="QTextBrowser" name="textBrowser_2">
      <property name="geometry">
       <rect>
-       <x>420</x>
+       <x>430</x>
        <y>100</y>
        <width>421</width>
        <height>131</height>

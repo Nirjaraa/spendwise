@@ -1,6 +1,5 @@
 #ifndef MAINWINDOW1_H
 #define MAINWINDOW1_H
-
 #include <QMainWindow>
 #include "signin.h"
 #include "dashboard.h"
@@ -48,6 +47,8 @@ private slots:
     void on_pushButton_clicked();
 
     void on_login_clicked();
+
+    void on_view_clicked(bool checked);
 
 private:
     Ui::MainWindow1 *ui;
