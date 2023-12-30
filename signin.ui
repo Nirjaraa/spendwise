@@ -43,13 +43,13 @@ border-image:none;
      <rect>
       <x>580</x>
       <y>30</y>
-      <width>301</width>
+      <width>331</width>
       <height>481</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> border-radius:10px;
- background-color: rgb(225,196,255);
+ background-color:rgb(246, 237, 255)
 
  
 
@@ -63,7 +63,7 @@ border-image:none;
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>287</width>
+       <width>341</width>
        <height>41</height>
       </rect>
      </property>

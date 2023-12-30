@@ -20,10 +20,10 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>160</y>
-      <width>160</width>
-      <height>120</height>
+      <x>760</x>
+      <y>110</y>
+      <width>121</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -37,10 +37,10 @@ border-image: url(:/resources/checkbalance.png);</string>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>160</y>
-      <width>160</width>
-      <height>120</height>
+      <x>600</x>
+      <y>240</y>
+      <width>121</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -54,10 +54,10 @@ border-image: url(:/resources/budgetdistributiom.png);</string>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>320</y>
-      <width>160</width>
-      <height>120</height>
+      <x>600</x>
+      <y>110</y>
+      <width>121</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -89,10 +89,10 @@ color:rgb(76,15,90);
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>160</y>
-      <width>160</width>
-      <height>120</height>
+      <x>760</x>
+      <y>240</y>
+      <width>121</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -325,10 +325,10 @@ color:rgb(76,15,90);
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>320</y>
-      <width>160</width>
-      <height>120</height>
+      <x>600</x>
+      <y>370</y>
+      <width>121</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -366,6 +366,177 @@ QPushButton:hover{
      <string>Reset</string>
     </property>
    </widget>
+   <widget class="QFrame" name="chart">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>0</y>
+      <width>591</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>490</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>-20</y>
+      <width>351</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="income">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>420</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="expenses">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>460</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="savings">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>490</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>50</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+font: 600 20pt &quot;Bahnschrift&quot;;
+color:rgb(76,15,90);
+ </string>
+    </property>
+    <property name="text">
+     <string>ICONS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="income_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>420</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+font: 600 12pt &quot;Bahnschrift&quot;;
+color:rgb(76,15,90);
+ </string>
+    </property>
+    <property name="text">
+     <string>Amount left</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="expenses_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>460</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+font: 600 12pt &quot;Bahnschrift&quot;;
+color:rgb(76,15,90);
+ </string>
+    </property>
+    <property name="text">
+     <string>Expenses:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="savings_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>490</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+font: 600 12pt &quot;Bahnschrift&quot;;
+color:rgb(76,15,90);
+ </string>
+    </property>
+    <property name="text">
+     <string>Savings:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>-30</y>
+      <width>351</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background color:white</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>chart</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_3</zorder>
    <zorder>label</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
@@ -382,6 +553,14 @@ QPushButton:hover{
    <zorder>name</zorder>
    <zorder>pushButton_4</zorder>
    <zorder>reset</zorder>
+   <zorder>label_2</zorder>
+   <zorder>income</zorder>
+   <zorder>expenses</zorder>
+   <zorder>savings</zorder>
+   <zorder>label_5</zorder>
+   <zorder>income_2</zorder>
+   <zorder>expenses_2</zorder>
+   <zorder>savings_2</zorder>
   </widget>
  </widget>
  <resources/>

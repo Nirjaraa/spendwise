@@ -36,7 +36,7 @@ public:
     bool connOpen()//this function will check if database is open or not
     {
         logindb = QSqlDatabase::addDatabase("QSQLITE");
-        logindb.setDatabaseName("C:/New folder/spendwise/db/login.db");
+        logindb.setDatabaseName("C:/Users/USER/git1/spendwise/db/login.db");
         // to see if the database is connected to the program
         if(!logindb.open()){
             qDebug()<<("Failed to open the databse");
@@ -71,6 +71,8 @@ private slots:
 
     void on_reset_clicked();
 
+    void reload();
+
 private:
     Ui::dashboard *ui;
     checkbalance *check;
@@ -83,6 +85,8 @@ private:
     aboutus *a;
     logout *l;
     records *r;
+
+
 
 };
 

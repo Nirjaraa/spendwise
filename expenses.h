@@ -22,7 +22,7 @@ public:
     bool connOpen()//this function will check if database is open or not
     {
         logindb = QSqlDatabase::addDatabase("QSQLITE");
-        logindb.setDatabaseName("C:/New folder/spendwise/db/login.db");
+        logindb.setDatabaseName("C:/Users/USER/git1/spendwise/db/login.db");
 
         // to see if the database is connected to the program
         if(!logindb.open()){
