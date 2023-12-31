@@ -2,10 +2,7 @@
 #include "ui_dashboard.h"
 #include<QMessageBox>
 #include <userdata.h>
-#include<QtCharts>
-#include<QChartView>
-#include<QPieSeries>
-#include<QPieSlice>
+
 
 dashboard::dashboard(QWidget *parent) :
     QMainWindow(parent),
@@ -18,61 +15,9 @@ dashboard::dashboard(QWidget *parent) :
 
     connOpen();
 
-    double income=0.00,expenses=0.00,moneycanbespent=0.00,savings=0.00;
+
 
     QSqlQuery fetch;
-
-
-
-    // Fetching data from the savings table
-    fetch.prepare("SELECT savings FROM savings WHERE username='" + username + "'");
-    if (fetch.exec()) {
-        while (fetch.next()) {
-             savings = fetch.value(0).toDouble();
-
-        }
-    }
-
-    // Fetching data from the expenses table
-    fetch.prepare("SELECT expenses FROM expenses WHERE username='" + username + "'");
-    if (fetch.exec()) {
-        while (fetch.next()) {
-             expenses = fetch.value(0).toDouble();
-
-        }
-    }
-
-    // Fetching data from the logininfoo table for income
-    fetch.prepare("SELECT income FROM income WHERE username='" + username + "'");
-    if (fetch.exec()) {
-        if (fetch.next()) {
-             income = fetch.value(0).toDouble();
-
-        }
-    }
-
-    moneycanbespent=income-expenses-savings;
-
-    QPieSeries *series = new QPieSeries();
-    series->append("savings", savings);
-    series->append("moneycanbespent",moneycanbespent);
-    series->append("expenses", expenses);
-
-    series->slices().at(0)->setColor(QColorConstants::Svg::limegreen);
-    series->slices().at(1)->setColor(QColorConstants::Svg::lightblue);
-    series->slices().at(2)->setColor(QColorConstants::Svg::lightyellow);
-
-
-    QChart *chart = new QChart();
-    chart->addSeries(series);
-    chart->setTitle("money");
-
-    QChartView *chartView = new QChartView(chart);
-    chartView->setParent(ui->chart);
-
-    ui->income->setText( QString::number(moneycanbespent));
-    ui->expenses->setText( QString::number(expenses));
-    ui->savings->setText( QString::number(savings));
 
     fetch.prepare("SELECT * FROM logininfoo WHERE username='"+username+"'");
 
